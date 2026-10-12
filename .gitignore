@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+# Đầu ra video không đưa lên repo (để trên Google Drive)
+*.mp4
+*.mov
+*.ass
+shorts/
+.DS_Store
+~$*.xlsx
