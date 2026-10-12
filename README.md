@@ -16,6 +16,8 @@ Bộ hồ sơ đầy đủ để **review thứ Tư 14/10/2026** và **bắt tay
 
 👉 Đọc trước: [docs/01-tom-tat-de-xuat.md](docs/01-tom-tat-de-xuat.md) (3 phút) và [docs/12-kich-ban-thuyet-trinh.md](docs/12-kich-ban-thuyet-trinh.md) (lời dẫn + 16 câu hỏi đáp).
 
+🎞️ **Slide thuyết trình (16 trang, có ghi chú lời dẫn):** https://claude.ai/artifact/DAKFJctqG54oiPtmcoXjRc — trình chiếu trực tiếp hoặc tải về PowerPoint/PDF; muốn người khác mở được thì bấm **Share** trên trang slide.
+
 ## Nội dung repo
 
 ### Tài liệu kế hoạch — `docs/`

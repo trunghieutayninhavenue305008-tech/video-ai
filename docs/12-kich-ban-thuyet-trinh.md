@@ -1,6 +1,8 @@
 # 12 — Kịch bản thuyết trình review (Thứ Tư 14/10/2026)
 
 > Thời lượng: **~18 phút trình bày + 15 phút hỏi đáp.** Đi theo slide; mỗi slide có "câu chốt" — nếu quên hết thì chỉ cần nói câu chốt.
+>
+> Slide: https://claude.ai/artifact/DAKFJctqG54oiPtmcoXjRc (16 trang, đúng thứ tự bảng ở mục 2; lời dẫn nằm trong ghi chú của từng slide).
 
 ## 1. 12 con số phải thuộc lòng
 
