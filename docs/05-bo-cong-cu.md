@@ -2,72 +2,79 @@
 
 > Giá là ảnh chụp từ trang giá chính thức và nguồn thứ cấp tháng 9–10/2026 — **xác nhận lại khi thanh toán**. Sửa giá trong sheet **CongCu** của [bảng tính](../ke-hoach/bang-tinh-ngan-sach-va-van-hanh.xlsx), mọi con số khác tự cập nhật.
 
-## 1. Bộ công cụ theo từng bước
+## 1. Công cụ theo từng bước (gói B)
 
-| Bước | Công cụ chính | Gói đề xuất (gói B) | Giá/tháng | Dự phòng | Vì sao chọn |
+| Bước | Công cụ chính | Gói | Giá/tháng | Dự phòng | Vì sao |
 |---|---|---|---|---|---|
-| Não trung tâm: nghiên cứu, kịch bản, prompt, SEO, QC tiếng Anh, phân tích | **Claude** (claude.ai + Claude Code) | Max 5x | US$100 | Pro US$20 (gói A) | Viết tiếng Anh tự nhiên, suy luận tốt, có Projects + Skills để "khoá" phong cách kênh, Claude Code chạy tự động hoá |
-| Tự động hoá (cắt short hàng loạt) | **Claude API** | Trả theo dùng | ~US$10 | — | Opus 5.5: US$4/US$20 mỗi 1 triệu token vào/ra → ~vài cent/video |
-| Tạo video | **Google Veo 3.1 trong Flow** | Google AI Ultra (20x) | US$199,99 | Google AI Pro US$19,99 (gói A) | Chất lượng & bám prompt tốt nhất, có âm thanh, dọc 9:16 gốc, giữ nhân vật bằng "Ingredients"; **thuê bao rẻ hơn API ~14 lần** |
-| Tạo ảnh / nhân vật / thumbnail | **Nano Banana Pro** (Gemini 3 Pro Image) | Đã gồm trong Google AI | 0 | Midjourney | Giữ nhân vật nhất quán, sửa ảnh bằng lời, nằm sẵn trong Flow |
-| Video dự phòng | **Kling AI** (3.0) | Standard | US$10 | Seedance 2.0 (Dreamina), Hailuo 02 | Clip dài hơn, điều khiển chuyển động; rẻ theo giây |
-| Giọng đọc & lồng tiếng | **ElevenLabs** | Pro (~600 phút/tháng) | US$99 | Creator US$22 (gói A) | Giọng tiếng Anh tự nhiên nhất; có lồng tiếng đa ngôn ngữ |
-| Dựng & phụ đề | **CapCut Pro** (desktop) | Pro | ~US$10 (≈220–290 nghìn ₫) | DaVinci Resolve (miễn phí) | Phụ đề tự động, template, auto-reframe, quen thuộc với người Việt |
-| Nhạc | **YouTube Audio Library** + **Suno** | Suno Pro | US$10 | — | Thư viện YouTube an toàn bản quyền; Suno tạo nhạc chủ đề riêng (Pro mới có quyền thương mại) |
-| Cắt short | **Tool `cat_short.py`** (Claude + ffmpeg) + **OpusClip** | OpusClip Pro | US$29 | — | Tool Claude miễn phí, kiểm soát được; OpusClip tiện, có điểm viral + hẹn giờ đăng |
-| Hẹn giờ đăng | YouTube Studio, Meta Business Suite, TikTok Studio | Miễn phí | 0 | OpusClip scheduler | Công cụ gốc của nền tảng, an toàn tài khoản |
-| SEO / ý tưởng | vidIQ (bản miễn phí) | Miễn phí | 0 | — | Xem lượng tìm kiếm, đối thủ |
+| Não trung tâm: chọn sản phẩm, kịch bản, QC tuân thủ, SEO, phân tích | **Claude** (claude.ai, Claude Code, skill) | Max 5x | US$100 | Pro US$20 | Viết tiếng Anh tự nhiên, kiểm tuân thủ, có Projects + Skills; công ty đã có skill nghiên cứu affiliate SaaS/broker |
+| Tự động cắt short | **Claude API** | Theo dùng | ~US$10 | — | Opus 5.5: US$4/US$20 mỗi 1 triệu token → vài cent/video |
+| **Người dẫn AI trông như người thật** | **HeyGen** (Avatar IV, lồng từ file giọng) | Pro, bậc ~1.500 credit* | ~US$74* | Synthesia; Hedra | Phổ biến nhất cho người dẫn talking-head; video tới 30 phút; avatar riêng từ ảnh |
+| Cảnh người thật do AI tạo | **Veo 3.1** trong Flow | Google AI Ultra 20x | US$199,99 | Kling (US$10) | Người thật chân thực nhất, có âm thanh, dọc 9:16 gốc |
+| Ảnh, keyframe, thumbnail | **Nano Banana Pro** | Trong gói Google | 0 | — | Giữ nhân vật nhất quán, dùng ảnh sản phẩm thật làm tham chiếu |
+| Giọng đọc (người dẫn + lời kể) | **ElevenLabs** | Pro (~600 phút/tháng) | US$99 | Creator US$22 | Giọng Mỹ tự nhiên; 1 giọng dùng cho cả HeyGen |
+| **Quay màn hình sản phẩm** | **OBS Studio** / trình ghi CapCut | Miễn phí | 0 | Claude in Chrome thao tác web app | Dữ liệu thật |
+| Dựng, phụ đề, zoom, bảng giá | **CapCut Pro** (desktop) | Pro | ~US$10 | DaVinci Resolve | Template, phụ đề tự động, quen thuộc |
+| Nhạc | YouTube Audio Library + **Suno** | Suno Pro | US$10 | — | An toàn bản quyền; Pro mới có quyền thương mại |
+| Cắt short | **`tools/cat_short.py`** + **OpusClip** | OpusClip Pro | US$29 | — | Tool Claude kiểm soát được (thêm dòng cảnh báo cho Kênh B) |
+| **Dùng thử sản phẩm** | Gói SaaS/AI tool trả phí để test | — | US$150 | Tài khoản review do hãng cấp | Review phải dựa trên dùng thật |
+| Hẹn giờ đăng | YouTube Studio, Meta Business Suite | Miễn phí | 0 | — | An toàn tài khoản |
 
-**Tổng gói B:** US$467,99 + 10% dự phòng = **~US$515/tháng ≈ 13,6 triệu ₫** (tỷ giá 26.500).
+\* HeyGen công bố Pro US$49/1.000 credit, có các bậc credit cao hơn; giá bậc ~1.500 credit là **ước tính tuyến tính** — xác nhận trên heygen.com/pricing. Avatar IV tốn ~20 credit/phút (nguồn thứ cấp ghi 16–31 tuỳ loại Look).
 
-## 2. Những công cụ đã xem xét nhưng KHÔNG chọn
+**Tổng gói B:** US$691,99 + 10% dự phòng = **~US$761/tháng ≈ 20,2 triệu ₫** (tỷ giá 26.500).
 
-| Công cụ | Lý do |
-|---|---|
-| **OpenAI Sora** | OpenAI thông báo **khai tử Sora (app & API) ngày 24/03/2026**. Không xây quy trình trên công cụ đang đóng cửa. |
-| Runway (Gen-4.5) | Chất lượng tốt nhưng ~12 credit/giây → đắt hơn Veo qua Flow nhiều lần cho cùng sản lượng. Giữ làm phương án nếu cần công cụ chỉnh sửa video chuyên sâu. |
-| HeyGen, Synthesia (người dẫn AI) | Kênh không dùng người dẫn; nhân vật AI "nói chuyện" dễ lỗi khẩu hình và vướng quy định AI persona. |
-| InVideo AI, Pictory (tự làm video từ chữ) | Ra video rập khuôn, dùng stock footage chung → đúng kiểu nội dung YouTube **không trả tiền**. |
-| Giọng Việt (Vbee, FPT.AI) | Không cần — thị trường là tiếng Anh. |
-| Tài khoản "chia sẻ"/crack (CapCut Pro 25 nghìn ₫…) | Rủi ro mất tài khoản giữa chừng, không có quyền thương mại, rủi ro bảo mật. **Chỉ mua chính hãng.** |
-| Gói miễn phí của mọi công cụ | Có watermark và/hoặc **không có quyền thương mại** (ElevenLabs Free, Suno Free, Kling Free). Chỉ dùng để thử. |
+## 2. Người dẫn AI — cách làm đúng
 
-## 3. Bảng tính credit Veo 3.1 (để hiểu vì sao chọn thuê bao)
+1. **Tạo khuôn mặt hư cấu** bằng Nano Banana Pro (prompt trong [thư viện](../templates/thu-vien-prompt.md#3-tạo-người-dẫn-ai-1-lần)); kiểm tra **không giống người nổi tiếng/người thật** (tìm ảnh ngược bằng Google Lens).
+2. Tạo **Photo Avatar / Avatar IV** trên HeyGen từ ảnh đó; lưu Avatar ID vào Bible.
+3. Mỗi video: tải file `host_*.mp3` của ElevenLabs → HeyGen khớp khẩu hình → xuất 16:9 nền studio của kênh.
+4. **Luôn công khai**: dòng chữ *"AI-generated presenter"* ở 30 giây đầu + bật nhãn "Altered or synthetic content" khi đăng + dòng trong mô tả.
+5. **Không** dùng ảnh/giọng của người thật khi chưa có hợp đồng đồng ý bằng văn bản; **không** dùng người dẫn AI cho Kênh B.
 
-| Model | Credit/clip 8 giây — Google AI Pro | Credit/clip — Google AI Ultra | Giá API (USD/giây, 1080p) |
+## 3. Bảng credit Veo 3.1 & lý do chọn thuê bao
+
+| Model | Credit/clip 8 giây — AI Pro | — AI Ultra | API (USD/giây, 1080p) |
 |---|---|---|---|
 | Veo 3.1 Lite | 10 | 5 | 0,08 |
 | Veo 3.1 Fast | 20 | 10 | 0,12 |
 | Veo 3.1 Quality | 100 | 100 | 0,40 |
 
-| Gói Google AI | Giá | Credit Flow/tháng | Credit/ngày (không cộng dồn) |
-|---|---|---|---|
-| AI Pro | US$19,99 | 1.000 | 50 |
-| AI Ultra 5x | US$99,99 | 10.000 | 50 |
-| **AI Ultra 20x** | **US$199,99** | **25.000** | 50 |
+Gói Google AI: Pro US$19,99 (1.000 credit + 50/ngày) · Ultra 5x US$99,99 (10.000) · **Ultra 20x US$199,99 (25.000)**. Một video dài cấp Tiêu chuẩn cần ~945 credit cho cảnh người AI ≈ **US$7,1** qua Ultra 20x (qua API ~US$70). Tính cả người dẫn, giọng, ảnh: **thuê bao rẻ hơn API ~5,7 lần** (Kênh B ~7,8 lần).
 
-→ Với Ultra 20x, 1 clip Fast 8 giây ≈ 10 credit ≈ **US$0,075**; qua API cùng clip đó là **US$0,96**. Một video dài cấp Tiêu chuẩn cần ~900 credit ≈ **US$6,8** (qua API: ~US$94).
+*Gói Ultra mới công bố ở Google I/O 2026 — kiểm tra có mở tại Việt Nam; nếu chưa: AI Pro + Kling Pro (US$37) + Seedance.*
 
-*Nguồn: diyai.io (cập nhật 20/09/2026), Gemini API pricing. Gói Ultra mới (5x/20x) công bố tại Google I/O 2026 — **kiểm tra gói có mở tại Việt Nam khi đăng ký**; nếu chưa có: dùng AI Pro + nâng Kling lên Pro (US$37) + Seedance.*
+## 4. Công cụ đã xem xét nhưng KHÔNG chọn
 
-## 4. Quyền thương mại — điều kiện bắt buộc
+| Công cụ | Lý do |
+|---|---|
+| OpenAI Sora | Đã thông báo khai tử (24/03/2026) |
+| Runway Gen-4.5 | ~12 credit/giây → đắt hơn Veo qua Flow cho cùng sản lượng |
+| Tool "video từ chữ" dùng stock (InVideo, Pictory…) | Ra video rập khuôn — đúng loại YouTube không trả tiền |
+| Deepfake/clone người thật không có hợp đồng | Vi phạm chính sách YouTube, luật quảng cáo, Luật Trí tuệ nhân tạo VN |
+| Tài khoản chia sẻ/crack | Mất tài khoản, không quyền thương mại, rủi ro bảo mật |
+| Gói miễn phí (HeyGen Free, ElevenLabs Free, Suno Free…) | Watermark và/hoặc không có quyền thương mại |
 
-| Công cụ | Gói tối thiểu được dùng thương mại | Ghi chú |
-|---|---|---|
-| Claude | Mọi gói trả phí | Đầu ra thuộc người dùng theo điều khoản |
-| Google AI / Veo / Nano Banana | Gói trả phí | Video Veo có watermark ẩn SynthID (không ảnh hưởng hiển thị) |
-| ElevenLabs | **Starter trở lên** | Free không có quyền thương mại |
-| Suno | **Pro trở lên** | Bài tạo khi đang là thành viên Pro mới có quyền thương mại; bài tạo ở gói Free thuộc Suno |
-| Kling | Gói trả phí | Đọc kỹ điều khoản: Kling cấp **quyền sử dụng**, không phải quyền sở hữu toàn phần |
-| CapCut | Pro | Một số template/nhạc trong CapCut chỉ dùng cá nhân → **không dùng nhạc CapCut cho YouTube** |
+## 5. Quyền thương mại
 
-## 5. Checklist mở tài khoản (ngày 1 sau review)
+| Công cụ | Điều kiện |
+|---|---|
+| Claude, Google AI, Veo, Nano Banana | Gói trả phí; video Veo có watermark ẩn SynthID |
+| HeyGen | Gói trả phí; avatar từ ảnh **của mình/hư cấu**, không dùng ảnh người khác |
+| ElevenLabs | Starter trở lên |
+| Suno | Pro trở lên (bài tạo khi đang là thành viên Pro) |
+| Kling | Gói trả phí — Kling cấp **quyền sử dụng**, đọc kỹ điều khoản |
+| CapCut | Pro; **không dùng nhạc trong thư viện CapCut cho YouTube** |
+| Logo/giao diện sản phẩm được review | Dùng để nhận diện & minh hoạ review (sử dụng hợp lý); không ngụ ý hãng tài trợ nếu không có |
 
-- [ ] 1 Gmail riêng cho kênh (không dùng mail cá nhân), bật **xác minh 2 bước** bằng ứng dụng xác thực.
-- [ ] Tạo **YouTube Brand Account** (cho phép thêm người quản lý sau này), xác minh số điện thoại để mở video > 15 phút, thumbnail tuỳ chỉnh.
-- [ ] Thẻ thanh toán quốc tế của công ty (Visa/Mastercard) — 1 thẻ riêng cho chi phí AI để dễ đối soát.
-- [ ] Đăng ký theo gói A: Claude Pro, Google AI Pro, ElevenLabs Creator, CapCut Pro.
-- [ ] Trình quản lý mật khẩu dùng chung (Bitwarden/1Password) — không gửi mật khẩu qua chat.
-- [ ] Tạo Google Drive theo cấu trúc thư mục ở [04](04-quy-trinh-san-xuat.md#3-cấu-trúc-thư-mục--đặt-tên-google-drive).
-- [ ] Tạo Claude Project "Kênh 1" + tải Bible + cài 3 skill (xem [11](11-tich-hop-claude.md)).
-- [ ] AdSense: tạo sẵn khi kênh gần đủ điều kiện (thông tin công ty, tài khoản ngân hàng nhận USD).
+## 6. Checklist mở tài khoản (ngày 1 sau review)
+
+- [ ] 2 Gmail riêng (Kênh A, Kênh B), bật **xác minh 2 bước** bằng ứng dụng xác thực.
+- [ ] 2 **YouTube Brand Account**, xác minh số điện thoại (video > 15 phút bắt buộc phải xác minh).
+- [ ] Thẻ thanh toán quốc tế của công ty, 1 thẻ riêng cho chi phí AI.
+- [ ] Gói A: Claude Pro, Google AI Pro, HeyGen Creator, ElevenLabs Creator, CapCut Pro; cài OBS.
+- [ ] Trình quản lý mật khẩu dùng chung.
+- [ ] Google Drive theo cấu trúc ở [04](04-quy-trinh-san-xuat.md#3-cấu-trúc-thư-mục--đặt-tên).
+- [ ] Claude Project cho mỗi kênh + cài 3 skill của repo + bật skill `saas-affiliate-research`, `broker-affiliate-research`, `forex-broker` (xem [11](11-tich-hop-claude.md)).
+- [ ] **Đăng ký chương trình affiliate** cho 10 sản phẩm đầu tiên (duyệt mất vài ngày–vài tuần); Amazon Associates (cần 3 đơn trong 180 ngày).
+- [ ] Gửi **hồ sơ hỏi ý kiến luật sư** cho Kênh B (mẫu câu hỏi ở [09](09-chinh-sach-phap-ly-rui-ro.md#6-hồ-sơ-hỏi-ý-kiến-luật-sư-cho-kênh-b)).
+- [ ] Trang trung gian/link rút gọn có thương hiệu trên website công ty (lọc quốc gia cho Kênh B).

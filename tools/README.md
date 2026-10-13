@@ -1,6 +1,6 @@
 # Tool `cat_short.py` — Claude chọn đoạn hay, ffmpeg tự cắt short 9:16
 
-Thay cho việc ngồi tua video tìm đoạn hay rồi cắt tay. Đầu vào là video dài đã dựng + file phụ đề SRT (xuất từ CapCut). Đầu ra là 5 short dọc 1080×1920 có phụ đề kiểu short (1–4 từ/lần hiện), âm lượng chuẩn -14 LUFS, kèm file `shorts.csv` có sẵn tiêu đề & caption cho YouTube Shorts, TikTok, Instagram, Facebook.
+Thay cho việc ngồi tua video review 15–20 phút tìm đoạn hay rồi cắt tay. Đầu vào là video dài đã dựng + file phụ đề SRT (xuất từ CapCut). Claude chọn 5 phần đứng độc lập (demo tính năng, bảng giá, so sánh, kết luận), bỏ qua phần công khai/kêu gọi, không chọn đoạn hứa hẹn lợi nhuận. Đầu ra là 5 short dọc 1080×1920 có phụ đề kiểu short (1–4 từ/lần hiện), âm lượng chuẩn -14 LUFS, (tuỳ chọn) dòng cảnh báo cố định cho Kênh B, kèm `shorts.csv` có sẵn tiêu đề & caption cho YouTube Shorts, TikTok, Instagram, Facebook.
 
 ## Cài đặt (1 lần)
 
@@ -15,24 +15,29 @@ Thay cho việc ngồi tua video tìm đoạn hay rồi cắt tay. Đầu vào l
 
 ```bash
 # Chuẩn: Claude chọn 5 đoạn, cắt giữa khung (cảnh đã bố cục chủ thể ở giữa)
-python tools/cat_short.py V001/7_export/final_16x9.mp4 V001/7_export/subtitles.srt --out V001/8_shorts
+python tools/cat_short.py V001/8_export/final_16x9.mp4 V001/8_export/subtitles.srt --out V001/9_shorts
 
-# Cảnh rộng, nhiều chủ thể → dùng nền mờ (video ở giữa, phụ đề bên dưới)
-python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 8_shorts --mode blur
+# Đoạn quay màn hình sản phẩm → dùng nền mờ (giữ nguyên giao diện ở giữa, phụ đề bên dưới)
+python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 9_shorts --mode blur
+
+# Kênh B (Crypto & Forex): thêm dòng cảnh báo cố định suốt short
+python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 9_shorts --mode blur --note "Not financial advice · Capital at risk"
 
 # Chỉ xem Claude chọn đoạn nào (không cắt) → sửa plan.json nếu muốn → cắt theo plan
-python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 8_shorts --plan-only
-python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 8_shorts --plan 8_shorts/plan.json
+python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 9_shorts --plan-only
+python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 9_shorts --plan 9_shorts/plan.json
 ```
 
-Tuỳ chọn khác: `--count 5` (số short), `--min 20 --max 90` (giây), `--words 4` (số từ mỗi lần hiện phụ đề), `--font "Montserrat ExtraBold" --font-size 78`, `--no-subs`, `--no-loudnorm`, `--model claude-opus-5-5`.
+Tuỳ chọn khác: `--count 5` (số short), `--min 20 --max 90` (giây), `--words 4` (số từ mỗi lần hiện phụ đề), `--font "Montserrat ExtraBold" --font-size 78`, `--note "…"` (dòng chữ cố định phía trên), `--no-subs`, `--no-loudnorm`, `--model claude-opus-5-5`.
+
+**Chọn chế độ:** đoạn người dẫn / cảnh người → `crop` (chủ thể ở giữa); đoạn quay màn hình → `blur` (cắt giữa sẽ mất giao diện). Nếu 5 short lẫn cả hai loại, chạy `--plan-only`, sửa `plan.json`, rồi chạy 2 lần với 2 chế độ cho từng nhóm.
 
 ## Đầu ra (thư mục `--out`)
 
 | File | Nội dung |
 |---|---|
 | `short_01.mp4 … short_05.mp4` | Short 1080×1920, 30 fps, H.264/AAC, -14 LUFS, phụ đề cháy vào hình |
-| `short_0N.ass` | File phụ đề đã định dạng (giữ lại để kiểm tra) |
+| `short_0N.ass` | File phụ đề + dòng cảnh báo đã định dạng (giữ lại để kiểm tra) |
 | `plan.json` | Đoạn Claude chọn (số thứ tự dòng phụ đề đầu/cuối + tiêu đề, caption). **Sửa tay được.** |
 | `shorts.csv` | Mở bằng Excel: thời điểm cắt, tiêu đề YouTube Shorts, caption TikTok/Instagram/Facebook, hashtag, câu đầu/câu cuối, lý do chọn |
 
@@ -40,7 +45,7 @@ Tuỳ chọn khác: `--count 5` (số short), `--min 20 --max 90` (giây), `--wo
 
 - Mỗi short dài trong khoảng `--min`…`--max` giây (tự nới/thu đoạn nếu Claude chọn lệch).
 - Các short không trùng nhau.
-- **Cảnh báo** nếu short mở đầu bằng từ nối ("And…", "But…", "This…") — dấu hiệu chương chưa đứng độc lập (lỗi K2 ở Cổng 1).
+- **Cảnh báo** nếu short mở đầu bằng từ nối ("And…", "But…", "This…") — dấu hiệu phần chưa đứng độc lập (lỗi K2 ở Cổng 1).
 
 ## Chi phí & dữ liệu
 
@@ -52,4 +57,4 @@ Tuỳ chọn khác: `--count 5` (số short), `--min 20 --max 90` (giây), `--wo
 ```bash
 python -m unittest tools/test_cat_short.py -v
 ```
-11 bài kiểm thử: đọc SRT (BOM, CRLF), chuẩn hoá plan, chia phụ đề, cấu trúc request gửi Claude (giả lập), và **cắt thật** 2 short bằng ffmpeg ở cả chế độ `crop` lẫn `blur` (bỏ qua nếu máy chưa có ffmpeg).
+12 bài kiểm thử: đọc SRT (BOM, CRLF), chuẩn hoá plan, chia phụ đề, dòng cảnh báo `--note`, cấu trúc request gửi Claude (giả lập), và **cắt thật** 2 short bằng ffmpeg ở cả chế độ `crop` lẫn `blur` (có `--note`) — bỏ qua phần cắt thật nếu máy chưa có ffmpeg.

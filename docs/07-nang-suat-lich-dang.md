@@ -1,80 +1,73 @@
 # 07 — Năng suất: mỗi ngày làm được bao nhiêu video & lịch đăng
 
-> Số liệu từ sheet **NangSuat** và **LichDang** của [bảng tính](../ke-hoach/bang-tinh-ngan-sach-va-van-hanh.xlsx). Giả định 1 người, 7 giờ làm hiệu quả/ngày (420 phút).
+> Số liệu từ sheet **NangSuat** và **LichDang** của [bảng tính](../ke-hoach/bang-tinh-ngan-sach-va-van-hanh.xlsx). Giả định 1 người, 7 giờ làm hiệu quả/ngày (420 phút), video review ~18 phút.
 
-## 1. Thời gian cho 1 video dài 10 phút (cấp Tiêu chuẩn)
+## 1. Thời gian cho 1 video review dài (cấp Tiêu chuẩn)
 
 | # | Bước | Công cụ | Tháng đầu (phút) | Thành thạo (phút) |
 |---|---|---|---|---|
-| 1 | Chọn chủ đề & nghiên cứu | Claude + vidIQ | 30 | 15 |
-| 2 | Kịch bản module + shot list + prompt | Claude (skill) | 45 | 20 |
-| 3 | **CỔNG 1** — duyệt kịch bản | Người + Claude | 15 | 10 |
-| 4 | Giọng đọc | ElevenLabs | 20 | 10 |
-| 5 | Ảnh nhân vật / keyframe | Nano Banana Pro | 45 | 25 |
-| 6 | Tạo clip video | Veo 3.1 / Kling | 90 | 50 |
-| 7 | Dựng | CapCut Pro | 60 | 35 |
-| 8 | Thumbnail + SEO | Claude + Nano Banana Pro | 25 | 15 |
-| 9 | **CỔNG 2** — QC, xuất, hẹn giờ | Người + checklist | 20 | 10 |
-| | **Tổng / 1 video dài** | | **350 phút (5,8 giờ)** | **190 phút (3,2 giờ)** |
-| + | Cắt 5 short + duyệt + hẹn giờ 4 nền tảng | Tool Claude / OpusClip | 40 | 25 |
-| + | 1 short native | Claude + Veo + CapCut | 45 | 30 |
+| 1 | Chọn sản phẩm & nghiên cứu | Claude + skill affiliate research | 45 | 25 |
+| 2 | Dùng thử & quay màn hình (dữ liệu thật) | OBS / Claude in Chrome | 60 | 40 |
+| 3 | Kịch bản module + shot list + tuân thủ | Claude (skill) | 45 | 25 |
+| 4 | **CỔNG 1** — duyệt kịch bản & tuân thủ | Người + Claude | 20 | 10 |
+| 5 | Giọng đọc ~18 phút | ElevenLabs | 25 | 12 |
+| 6 | Người dẫn AI *(Kênh B bỏ qua)* | HeyGen | 30 | 15 |
+| 7 | Cảnh người thật AI + ảnh | Veo 3.1 / Nano Banana Pro | 45 | 25 |
+| 8 | Dựng: màn hình, zoom, bảng giá, phụ đề | CapCut Pro | 100 | 55 |
+| 9 | Thumbnail + SEO + link affiliate + disclosure | Claude + Nano Banana Pro | 30 | 15 |
+| 10 | **CỔNG 2** — QC, xuất, hẹn giờ | Người + checklist | 20 | 12 |
+| | **Tổng / 1 video dài** | | **420 phút (7 giờ)** | **234 phút (3,9 giờ)** |
+| + | Cắt 5 short + duyệt + hẹn giờ | Tool Claude / OpusClip | 40 | 25 |
+| + | 1 short native dọc | Claude + HeyGen/Veo + CapCut | 45 | 30 |
 
-Thời gian giảm từ 350 → 190 phút nhờ: template CapCut, thư viện prompt, Bible kênh, ảnh tham chiếu dùng lại, quen tay. **Mốc kiểm tra: cuối tuần 4 phải ≤ 240 phút/video.**
+Kênh B nhanh hơn ~15 phút/video (không bước 6) nhưng bước 2 lâu hơn khi test nạp/rút. **Mốc kiểm tra: cuối tuần 4 phải ≤ 280 phút/video.**
 
 ## 2. Mỗi ngày ra được tối thiểu / tối đa bao nhiêu video
 
-| Mức | Khi nào | Video dài / ngày | Short / ngày | % thời gian dùng | Thời gian còn lại dùng cho |
+| Mức | Khi nào | Video dài / ngày | Short / ngày | % thời gian | Thời gian còn lại dùng cho |
 |---|---|---|---|---|---|
-| **TỐI THIỂU** | Tuần 1–4 (đang học) | **0,6** (≈ 3 video/tuần) | 3 short cắt | 56% | Học công cụ, hoàn thiện template, sửa Bible |
-| **TIÊU CHUẨN** | Từ tháng 2 | **1** (5 video/tuần) | 5 short cắt + 1 short native = **6** | 58% | Đọc số liệu, trả lời bình luận, A/B thumbnail, làm kho dự trữ |
-| **TỐI ĐA** | 1 người thành thạo | **2** | 10 short cắt | ~100% | Không còn — chỉ dùng khi làm kho dự trữ, lồng tiếng, hoặc chuẩn bị kênh 2 |
+| **TỐI THIỂU** | Tuần 1–4 | **0,5** (≈ 2–3 video/tuần) | 2–3 short cắt | 55% | Học công cụ, template, xin duyệt affiliate, chuẩn bị Kênh B |
+| **TIÊU CHUẨN** | Từ tháng 2 | **1** (5 video/tuần, chia 2 kênh) | 5 short cắt + 1 short riêng = **6** | 69% | Phân tích số liệu, trả lời bình luận, cập nhật giá/link video cũ |
+| **TỐI ĐA** | 1 người thành thạo | **1,5** | 7–8 short cắt | 93% | Không còn — chỉ để làm kho dự trữ |
 
-Năng lực trần tính theo công thức: 420 phút ÷ (190 + 25) phút = **~1,95 video dài/ngày** khi thành thạo (≈ 1,1 video/ngày ở tháng đầu).
+Năng lực trần: 420 ÷ (234 + 25) = **~1,6 video dài/ngày** khi thành thạo (~0,9 ở tháng đầu).
 
-**Vì sao không chạy mức tối đa mỗi ngày?**
-1. **Trần đăng của nền tảng** — đăng quá dày dễ bị coi là "sản xuất hàng loạt" và làm loãng lượt xem mỗi video.
-2. Chất lượng giảm khi không còn thời gian duyệt → lỗi lặt vặt tăng.
-3. Giữ 40% thời gian để **cải tiến** — đây là thứ giúp video sau tốt hơn video trước.
+Video review cần thêm thời gian **bảo trì**: cập nhật bình luận ghim khi giá sản phẩm đổi, thay link affiliate hết hạn — đây là lý do giữ ~30% thời gian dự phòng ở mức Tiêu chuẩn.
 
-→ Phần năng lực dư dùng để tạo **kho dự trữ 1–2 tuần video** (phòng ốm/nghỉ lễ Tết) và làm **lồng tiếng** đa ngôn ngữ.
+## 3. Trần đăng mỗi kênh
 
-## 3. Trần đăng mỗi kênh / ngày
-
-| Nền tảng | Loại | Tối thiểu | Tối đa | Ghi chú |
+| Nền tảng | Loại | Tối thiểu | Tối đa | Gói B thực tế |
 |---|---|---|---|---|
-| YouTube | Video dài | 3/tuần | **1/ngày** | Đều đặn, cùng khung giờ quan trọng hơn số lượng |
-| YouTube | Shorts | 1/ngày | **4/ngày** | Gói B ≈ 4/ngày |
-| Facebook | Reels | 1/ngày | 2/ngày | Đăng lại file short |
-| Instagram | Reels | 1/ngày | 2/ngày | Đăng lại file short |
-| TikTok | Video dọc | 1/ngày | 3/ngày | Thử nghiệm 30 ngày |
-
-Muốn ra nhiều hơn trần → **mở kênh 2** (gói C), không nhồi vào kênh 1.
+| YouTube | Video dài ≥ 15 phút | 2/tuần | 1/ngày | Kênh A ~3/tuần, Kênh B ~2/tuần |
+| YouTube | Shorts | 1/ngày | 4/ngày | Kênh A ~2–3/ngày, Kênh B ~1–2/ngày |
+| TikTok | Video dọc | 1/ngày | 3/ngày | Chỉ Kênh A (thử 30 ngày) |
+| Facebook / Instagram | Reels | 1/ngày | 2/ngày | Kênh A; Kênh B hạn chế |
 
 ## 4. Lịch đăng: giờ Việt Nam ↔ giờ khán giả
 
-Mỹ đổi sang giờ mùa đông ngày **01/11/2026** → giờ VN **sớm hơn New York 12 tiếng** (đến 14/03/2027; mùa hè là 11 tiếng). Paris chậm hơn VN 6 tiếng (mùa đông).
+Từ **01/11/2026** giờ VN sớm hơn New York **12 tiếng** (đến 14/03/2027), sớm hơn Paris 6 tiếng.
 
-| Nền tảng | Loại | **Giờ đăng (giờ VN)** | Giờ New York | Giờ Paris | Tần suất |
+| Kênh · nền tảng | Loại | **Giờ VN** | New York | Paris | Tần suất |
 |---|---|---|---|---|---|
-| YouTube | Video dài | **02:00** | 14:00 | 20:00 | T2–T6 |
-| YouTube | Short #1 | 21:00 | 09:00 | 15:00 | Hằng ngày |
-| YouTube | Short #2 | 01:00 | 13:00 | 19:00 | Hằng ngày |
-| YouTube | Short #3 | 07:00 | 19:00 | 01:00 | Hằng ngày |
-| YouTube | Short #4 | 23:00 | 11:00 | 17:00 | Hằng ngày (gói B) |
-| Facebook | Reels | 00:00 | 12:00 | 18:00 | Hằng ngày |
-| TikTok | Short | 06:00 | 18:00 | 00:00 | 1–2/ngày |
-| Instagram | Reels | 07:30 | 19:30 | 01:30 | Hằng ngày |
+| A · YouTube | Video dài | **02:00** | 14:00 | 20:00 | T3, T5, T7 |
+| B · YouTube | Video dài | **03:00** | 15:00 | 21:00 | T2, T4 |
+| A · YouTube | Short #1 | 21:00 | 09:00 | 15:00 | Hằng ngày |
+| A · YouTube | Short #2 | 01:00 | 13:00 | 19:00 | Hằng ngày |
+| B · YouTube | Short #1 | 23:00 | 11:00 | 17:00 | Hằng ngày |
+| B · YouTube | Short #2 | 07:00 | 19:00 | 01:00 | Hằng ngày |
+| A · TikTok | Short | 06:00 | 18:00 | 00:00 | 1–2/ngày |
+| A · Facebook/Instagram | Reels | 00:00 | 12:00 | 18:00 | Hằng ngày |
 
-**Tất cả đều hẹn giờ trước** trong YouTube Studio / Meta Business Suite / TikTok Studio. Người vận hành làm giờ hành chính, không cần thức đêm.
+Tất cả **hẹn giờ trước** trong YouTube Studio / Meta Business Suite — không ai phải thức đêm.
 
 ## 5. Nhịp làm việc mẫu 1 tuần (mức Tiêu chuẩn)
 
-| Ngày | Sáng (8:30–12:00) | Chiều (13:30–17:30) |
+| Ngày | Sáng | Chiều |
 |---|---|---|
-| **Thứ Hai** | Phân tích số liệu tuần trước với Claude (30 phút) → chọn 5 chủ đề tuần → viết 5 kịch bản (Claude) → **Cổng 1** cho cả 5 | Video A: giọng → ảnh → bắt đầu tạo clip |
-| Thứ Ba | Video A: dựng → thumbnail/SEO → **Cổng 2** → hẹn giờ; cắt 5 short | Video B: giọng → ảnh → clip |
-| Thứ Tư | Video B: hoàn tất + short | Video C: giọng → ảnh → clip |
-| Thứ Năm | Video C: hoàn tất + short | Video D: giọng → ảnh → clip |
-| Thứ Sáu | Video D: hoàn tất + short; Video E bắt đầu | Video E hoàn tất; 5 short native cho tuần sau; dọn thư mục, cập nhật bảng TheoDoi |
+| **Thứ Hai** | Claude phân tích số liệu tuần trước (views + click/chuyển đổi affiliate) → chọn 5 sản phẩm tuần → xin/kiểm tra affiliate | Test & quay màn hình 2 sản phẩm |
+| Thứ Ba | Viết 5 kịch bản (Claude) → **Cổng 1** cả 5 | Test & quay màn hình 3 sản phẩm còn lại |
+| Thứ Tư | Video A1: giọng → người dẫn → B-roll → dựng | A1: SEO → **Cổng 2** → hẹn giờ; cắt short; bắt đầu B1 |
+| Thứ Năm | B1 hoàn tất; A2 | A2 hoàn tất; short |
+| Thứ Sáu | A3 + B2 | 5 short native tuần sau; cập nhật giá/link video cũ; tổng kết lỗi → sửa Bible |
 
-**Gom việc theo loại (batching):** viết 5 kịch bản cùng lúc vào thứ Hai giúp Claude giữ giọng văn đồng nhất và duyệt Cổng 1 một lượt — nhanh hơn và ít lỗi hơn làm rải rác.
+Gom việc theo loại (test 1 lượt, viết 1 lượt, duyệt 1 lượt) giúp giữ giọng văn đồng nhất và ít lỗi hơn.

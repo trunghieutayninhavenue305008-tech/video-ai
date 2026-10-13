@@ -1,81 +1,79 @@
-# 02 — Thị trường, ngách nội dung & vai trò từng nền tảng
+# 02 — Thị trường, ngách & cấu trúc kênh
 
 ## 1. Thị trường: Global, tiếng Anh
 
 | Tiêu chí | Kênh tiếng Việt | **Kênh tiếng Anh (Global)** |
 |---|---|---|
-| RPM video dài (doanh thu thực nhận / 1.000 lượt xem) | ~US$0,2–1 (Dynamoi, 7/2026: RPM Việt Nam ~US$0,22) | **~US$4–12** tuỳ ngách (Giáo dục & Khoa học trung vị US$10,22 — AIR Media-Tech) |
-| Quy mô khán giả | ~70 triệu người dùng | Hàng tỷ người dùng, nhiều nước có CPM cao (Mỹ, Anh, Canada, Úc, Bắc Âu) |
-| Khả năng mở rộng | Hạn chế | Lồng tiếng sang Tây Ban Nha, Bồ Đào Nha, Hindi… bằng tính năng đa âm thanh của YouTube |
-| Thách thức | — | Đội ngũ không phải người bản ngữ → **Claude làm biên tập viên tiếng Anh**, giọng ElevenLabs bản ngữ |
+| RPM quảng cáo (doanh thu thực nhận / 1.000 lượt xem) | ~US$0,2–1 | Tech & Software US$8–20; Finance US$10–30; Crypto US$8–20 (biến động) |
+| Affiliate | Ít chương trình, hoa hồng thấp | SaaS/AI 20–50% định kỳ; forex CPA US$200–1.200+; crypto 20–50% phí; Amazon 1–4% |
+| Khả năng mở rộng | Hạn chế | Lồng tiếng đa ngôn ngữ trên cùng video (YouTube multi-audio) |
 
-**Kết luận:** cùng một chi phí sản xuất, 1 lượt xem tiếng Anh từ khán giả Mỹ/Âu đáng giá gấp 10–30 lần lượt xem tiếng Việt.
+Hệ quả vận hành: giọng **tiếng Anh Mỹ**; **hẹn giờ đăng** theo giờ Mỹ/Âu (đăng 01:00–03:00 giờ VN); Claude làm **biên tập viên tiếng Anh bản ngữ** và kiểm tuân thủ.
 
-**Hệ quả vận hành:**
-- Giọng đọc: **tiếng Anh giọng Mỹ** (ElevenLabs), tốc độ ~150 từ/phút.
-- Giờ đăng: theo giờ Mỹ/Âu → **hẹn giờ đăng 01:00–02:00 sáng giờ VN** (13:00–14:00 New York mùa đông). Không cần thức đêm — xem [07](07-nang-suat-lich-dang.md).
-- Kiểm duyệt ngôn ngữ: mọi kịch bản qua **skill `qc-video`** của Claude (ngữ pháp, độ tự nhiên, nhạy cảm văn hoá).
+## 2. Năm mảng nội dung — đánh giá
 
-## 2. Chọn ngách: tiêu chí & chấm điểm
+| Mảng | RPM quảng cáo | Affiliate | Người dẫn AI được phép? | Rủi ro pháp lý | Test thật | **Ưu tiên** |
+|---|---|---|---|---|---|---|
+| **AI tool** (công cụ AI viết, ảnh, video, giọng, agent…) | Cao (Tech) | 20–50% định kỳ, nhiều chương trình mới | ✅ Có | Thấp | Dễ — dùng thử/gói rẻ | **1** |
+| **SaaS** (CRM, email marketing, website builder, quản lý dự án…) | Cao | 20–50% định kỳ (thường 12–24 tháng) | ✅ Có | Thấp | Dễ — dùng thử | **2** |
+| **SPVL** — sản phẩm vật lý công nghệ (thiết bị cho creator, văn phòng, gadget AI) | Trung bình | Amazon 1–4% (điện tử ~2%), thương hiệu riêng 5–15% | ✅ Có | Thấp–TB (hình sản phẩm, giá) | Khó — phải mua hoặc dùng media kit | **3** |
+| **Crypto** (sàn, ví, công cụ) | Cao, biến động | 20–50% phí giao dịch | ❌ **Không** | **Cao** (NĐ 284/2026 VN, MiCA EU, FCA UK) | Nạp tiền thật | **4 — có điều kiện** |
+| **Forex** (broker, nền tảng, prop firm) | Rất cao | CPA US$200–1.200+ / khách đủ điều kiện | ❌ **Không** | **Rất cao** (VN chưa cấp phép sàn forex; FCA, CFTC) | Nạp tiền thật | **5 — có điều kiện** |
 
-Tiêu chí chọn ngách cho kênh **100% AI, không lộ mặt, khán giả toàn cầu**:
-1. **RPM cao** (khán giả Mỹ/Âu, nhà quảng cáo trả nhiều).
-2. **AI tạo ra giá trị mà quay thật không làm được** → đây là "giá trị gia tăng" giúp qua chính sách *inauthentic content*.
-3. **Rủi ro chính sách thấp** (không đụng tài chính/y tế/pháp lý bằng nhân vật AI, không tin tức, không nội dung gây sốc).
-4. **Nội dung "xanh mãi"** (evergreen) — video cũ vẫn kiếm view nhiều năm.
-5. **Cắt short dễ** — có nhiều "khoảnh khắc ồ!" độc lập.
-6. **Khối lượng kiểm chứng sự thật vừa phải.**
+*Nguồn số liệu: xem [nguon-tham-khao.md](nguon-tham-khao.md); số affiliate từ trang tổng hợp ngành — xác nhận trên trang đối tác của từng hãng.*
 
-Thang điểm 1–5 (5 là tốt nhất):
+## 3. Cấu trúc 2 kênh (đề xuất)
 
-| Ngách | RPM | Lợi thế AI | Rủi ro CS (5 = an toàn) | Evergreen | Dễ cắt short | Kiểm chứng (5 = nhẹ) | **Tổng** |
-|---|---|---|---|---|---|---|---|
-| **Lịch sử & Bí ẩn** (nền văn minh mất tích, sự kiện bí ẩn, "cuộc sống thời…") | 4 | **5** — tái hiện quá khứ không thể quay | 4 | 5 | 5 | 3 | **26** |
-| Khoa học & Vũ trụ ("What if…", vũ trụ, cơ thể người) | **5** | 5 | 4 | 5 | 4 | 2 | 25 |
-| Thần thoại & Truyền thuyết | 3 | 5 | **5** — rõ là tưởng tượng | 5 | 5 | 4 | **27** |
-| Thiên nhiên & Động vật (phim tài liệu) | 3 | 4 | 3 — dễ bị coi "giả thật", cấm nội dung động vật đau khổ | 5 | 4 | 3 | 22 |
-| Kỹ thuật "How it works" | 4 | 3 | 5 | 4 | 3 | 2 | 21 |
+| | **Kênh A — Tech & AI Tools** | **Kênh B — Crypto & Forex** |
+|---|---|---|
+| Nội dung | Review, so sánh, "best of" cho SaaS, AI tool, SPVL công nghệ | Review sàn/broker, so sánh phí, kiểm tra giấy phép, test nạp–rút |
+| Hình ảnh người | **Người dẫn AI** trông như người thật (~20%) + cảnh người thật AI (~20%) | **Không người dẫn AI**. Cảnh người thật AI chỉ minh hoạ (~20%, không nói, không tư vấn). Tuỳ chọn: người thật đứng hình |
+| Phần lớn hình | Quay màn hình sản phẩm thật (~40%) + bảng giá/so sánh | Quay màn hình nền tảng thật (~55%) + bảng phí, giấy phép |
+| Doanh thu chính | Affiliate SaaS/AI + quảng cáo YouTube | Affiliate CPA/chia phí (+ quảng cáo nếu được bật) |
+| Điều kiện mở | Ngay từ 22/10/2026 | **Sau khi có ý kiến luật sư** |
+| Sản lượng gói B | 12 video dài/tháng (~3/tuần) | 8 video dài/tháng (~2/tuần) |
 
-**Đề xuất:** Kênh 1 = **Lịch sử & Bí ẩn, có series phụ Thần thoại** (gộp 2 ngách điểm cao nhất, cùng phong cách hình ảnh, cùng khán giả). Kênh 2 (giai đoạn mở rộng) = **Khoa học & Vũ trụ** (RPM cao nhất nhưng cạnh tranh mạnh và phải kiểm chứng kỹ).
+**Vì sao không gộp 1 kênh?**
+1. Chính sách YouTube: *"channels that use AI-generated personas to deliver information on sensitive topics… will not be allowed to monetize"* — ví dụ nêu rõ *"AI-generated podcast hosts offering financial guidance, investment tips, or wealth management advice"*. Chỉ cần vài video tài chính có người dẫn AI là **cả kênh** mất kiếm tiền.
+2. Khán giả khác nhau (người mua phần mềm vs. trader) → gộp làm thuật toán YouTube khó đề xuất đúng người.
+3. Rủi ro pháp lý tài chính tách riêng — nếu Kênh B gặp vấn đề, Kênh A không bị ảnh hưởng.
 
-Ví dụ 10 chủ đề mở màn cho kênh 1:
-1. The Lost City of Ubar — Atlantis of the Sands
-2. What Daily Life Was Like in Ancient Rome (for a 10-year-old)
-3. The Bronze Age Collapse: When Civilization Ended
-4. Göbekli Tepe: The Temple Older Than Writing
-5. The Mystery of the Sea Peoples
-6. How Did the Egyptians Really Move the Stones?
-7. The Library of Alexandria: What Was Really Lost
-8. The Voynich Manuscript Explained
-9. Norse Mythology: Ragnarök Told Like a Movie
-10. The Real Story Behind the Trojan Horse
+## 4. Ví dụ 10 chủ đề mở màn
 
-## 3. Ngách KHÔNG làm (rủi ro bị tắt kiếm tiền hoặc khoá kênh)
+**Kênh A**
+1. [AI tool] *Best AI Video Generators in 2026 — Real Tests, Real Prices*
+2. [AI tool] *ElevenLabs vs Murf: Which AI Voice Sounds Most Human?*
+3. [SaaS] *HubSpot vs Pipedrive for Small Teams (After Building Both)*
+4. [SaaS] *Notion vs ClickUp in 2026: An Honest 20-Minute Comparison*
+5. [SPVL] *Best USB Microphones for AI Voiceover Creators Under $150*
+6. [AI tool] *Claude vs ChatGPT for Business Writing — Side-by-Side Tests*
 
-| Ngách | Lý do |
+**Kênh B** (sau khi có ý kiến luật sư; chỉ sàn/broker có giấy phép cấp 1)
+7. [Forex] *[Broker] Review 2026: Spreads, Withdrawals & Regulation — Tested With Real Money*
+8. [Forex] *[Broker A] vs [Broker B]: Real Spread Test Over 30 Days*
+9. [Crypto] *[Sàn A] vs [Sàn B] Fees Compared: What You Actually Pay*
+10. [Crypto] *How to Check if a Crypto Exchange Is Licensed (Step by Step)*
+
+> Chọn sản phẩm bằng skill có sẵn trong tài khoản Claude của công ty: **`saas-affiliate-research`** (SaaS/AI có affiliate) và **`broker-affiliate-research`** / **`forex-broker`** (sàn, broker) — xem [11](11-tich-hop-claude.md).
+
+## 5. Nội dung KHÔNG làm
+
+| Loại | Lý do |
 |---|---|
-| Tài chính, y tế, pháp lý với **nhân vật/chuyên gia AI** | Bị cấm kiếm tiền từ 16/07/2026 ("AI persona" bàn chủ đề nhạy cảm) |
-| Tin tức, chính trị, sự kiện nóng | Rủi ro sai lệch thông tin, nhãn cảnh báo, đòi hỏi tốc độ |
-| Tổng hợp/re-up clip, phim, nhạc người khác | Vi phạm *reused content* + bản quyền |
-| Truyện "Reddit", truyện đọc theo khuôn giống nhau | Điển hình của *generic/repetitive* — nhóm đầu tiên bị tắt kiếm tiền |
-| Nội dung trẻ em (Made for Kids) | RPM thấp, tắt bình luận, tắt nhiều tính năng |
-| "Giải cứu động vật", nội dung gây sốc, câu cảm xúc | Bị liệt vào *off-putting/distressing* — YouTube loại cả kênh khỏi YPP |
-| Deepfake người nổi tiếng/người thật | Vi phạm chính sách, Luật Trí tuệ nhân tạo VN (Luật 134/2025/QH15) |
+| Nhân vật AI tư vấn đầu tư, tài chính, pháp lý, y tế | YouTube tắt kiếm tiền **cả kênh** (chính sách AI persona) |
+| "Tôi đã dùng 30 ngày…" khi đội chưa test thật; lời chứng thực khách hàng do AI tạo | FTC cấm (16 CFR Part 465), phạt dân sự theo từng vi phạm |
+| Hứa lợi nhuận, "không rủi ro", "làm giàu nhanh", tín hiệu giao dịch, copy trade kêu gọi vốn | Lừa đảo/chính sách spam YouTube; pháp luật tài chính nhiều nước |
+| Sàn/broker không có giấy phép cấp 1, sàn bị cơ quan quản lý cảnh báo | Rủi ro pháp lý + uy tín |
+| Nội dung nhắm người xem Việt Nam về forex/crypto | Pháp luật VN (xem [09](09-chinh-sach-phap-ly-rui-ro.md)) |
+| Deepfake người nổi tiếng/người thật "giới thiệu" sản phẩm | Vi phạm chính sách YouTube, Luật Trí tuệ nhân tạo VN, luật quảng cáo |
+| Ghép video review của người khác | *Reused content* + bản quyền |
 
-## 4. Vai trò từng nền tảng
+## 6. Vai trò từng nền tảng
 
-| Nền tảng | Vai trò | Kiếm tiền trực tiếp với đội ngũ ở VN | Ghi chú |
-|---|---|---|---|
-| **YouTube (video dài)** | **Nguồn doanh thu chính** (quảng cáo, thành viên kênh) | Có — sau khi vào YPP; AdSense trả về tài khoản ngân hàng VN | RPM video dài gấp ~100 lần Shorts |
-| **YouTube Shorts** | Kéo người đăng ký, đẩy người xem sang video dài (gắn "Related video") | Có — RPM ~US$0,03–0,10 | Phân phối toàn cầu theo nội dung/ngôn ngữ |
-| **Facebook Reels** | Kéo traffic, xây thương hiệu | Kiểm tra quyền kiếm tiền trong Meta Business Suite | Đăng lại cùng file short |
-| **Instagram Reels** | Kéo traffic, xây thương hiệu | Không có chương trình trả tiền cho VN | Reels > 3 phút không được đề xuất cho người mới |
-| **TikTok** | Thử nghiệm 30 ngày | **Chưa** — Creator Rewards chỉ mở cho tài khoản đăng ký ở Mỹ, Anh, Đức, Pháp, Brazil, Nhật, Hàn (theo hỗ trợ TikTok, 8/2026) | Tài khoản đăng ký tại VN thường được phân phối ưu tiên cho người xem trong khu vực (kinh nghiệm phổ biến của cộng đồng creator). **Không dùng VPN/SIM giả để "lách" — vi phạm điều khoản.** |
-
-> Nguyên tắc: **mọi short đều trỏ về YouTube**. Mục tiêu cuối là giờ xem video dài.
-
-## 5. Mở rộng đa ngôn ngữ (giai đoạn 2, từ tháng thứ 3)
-
-- YouTube đã mở **tự động lồng tiếng (auto-dubbing) cho mọi creator** (2/2026) và **đa track âm thanh** (creator tự tải bản lồng tiếng lên cùng 1 video).
-- Cách làm: 1 video → thêm track Tây Ban Nha, Bồ Đào Nha, Hindi, Indonesia, Đức, Pháp. **Không phải đăng lại video** → không bị coi là trùng lặp, lượt xem dồn về 1 video.
-- Thứ tự: dùng **auto-dubbing miễn phí** của YouTube trước → video nào tốt mới làm bản lồng tiếng chất lượng cao bằng ElevenLabs.
+| Nền tảng | Kênh A | Kênh B |
+|---|---|---|
+| **YouTube video dài** | Doanh thu chính (quảng cáo + affiliate) | Doanh thu chính (affiliate) |
+| **YouTube Shorts** | Kéo người đăng ký, "Related video" về bản dài | Như Kênh A, nội dung dữ kiện (phí, giấy phép) |
+| **TikTok** | Thử 30 ngày (tài khoản VN chưa có Creator Rewards) | **Không** — quy định nội dung tài chính chặt, khó kiểm soát vùng phát |
+| **Facebook / Instagram Reels** | Kéo traffic | Hạn chế — kiểm tra quy định nội dung tài chính của Meta |
+| **Website review của công ty** (nếu có) | Trang trung gian chứa link affiliate + bài viết chi tiết (tăng chuyển đổi, SEO) | **Bắt buộc nên có**: trang trung gian lọc quốc gia (chặn Mỹ/Anh/VN với sàn không phù hợp) + cảnh báo rủi ro đầy đủ |

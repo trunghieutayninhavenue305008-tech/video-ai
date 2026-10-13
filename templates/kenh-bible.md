@@ -1,115 +1,119 @@
-# BIBLE KÊNH — [Tên kênh]  ·  v1.0 (điền ngày)
+# BIBLE KÊNH — [Tên Kênh A] & [Tên Kênh B]  ·  v1.0 (điền ngày)
 
-> "Hiến pháp" của kênh. Mọi kịch bản, prompt, thumbnail phải theo tài liệu này. **Tải file này vào Project knowledge của Claude.** Khi phát hiện lỗi lặp lại → sửa ở đây trước, ghi vào mục 12 (Nhật ký thay đổi).
->
-> Ví dụ dưới đây đã điền sẵn cho ngách đề xuất **Lịch sử & Bí ẩn** — chỉnh lại sau khi chốt ở buổi review.
+> "Hiến pháp" của 2 kênh review. Mọi kịch bản, prompt, thumbnail, mô tả phải theo tài liệu này. **Tải vào Project knowledge của Claude (mỗi kênh 1 Project).** Lỗi lặp lại → sửa ở đây trước, ghi vào mục 12.
 
-## 1. Định vị kênh
-| Mục | Nội dung |
-|---|---|
-| Tên kênh | [Tên kênh] |
-| Ngách | History & Mysteries (series phụ: Myths & Legends) |
-| Lời hứa với khán giả | *Cinematic stories of lost worlds and unsolved mysteries — told in about 10 minutes, backed by real sources.* |
-| Khán giả | 25–54 tuổi, Mỹ/Anh/Canada/Úc/châu Âu; tò mò, thích phim tài liệu; xem video dài trên TV/máy tính, short trên điện thoại |
-| Khác biệt | Tái hiện quá khứ bằng hình ảnh điện ảnh (điều quay thật không làm được) + kể chuyện chặt chẽ có nguồn |
-| Không làm | Tin tức, chính trị hiện đại, tài chính/y tế/pháp lý, deepfake người thật, nội dung gây sốc/thao túng cảm xúc |
-
-## 2. Giọng văn (tiếng Anh)
-- Người kể chuyện điềm tĩnh, tò mò, thông minh — như người dẫn phim tài liệu, **không** như người bán hàng.
-- Câu ngắn (trung bình 12–16 từ). Chi tiết cụ thể (con số, địa danh, vật thể) thay vì tính từ chung chung.
-- Mỗi chương mở bằng **một câu hỏi hoặc một hình ảnh cụ thể**; kết bằng **một sự thật bất ngờ**.
-- Thỉnh thoảng gọi trực tiếp người xem ("Imagine you're standing…") — tối đa 2 lần/video.
-- Điều chưa chắc chắn: *"Historians believe…", "One theory suggests…", "We may never know…"*. Không khẳng định giả thuyết như sự thật.
-
-### Từ & cụm từ cấm (văn phong "AI" sáo rỗng)
-`delve`, `tapestry`, `testament to`, `in today's fast-paced world`, `buckle up`, `let's dive in`, `it's important to note`, `game-changer`, `ladies and gentlemen`, `unlock the secrets`, `shrouded in mystery` (tối đa 1 lần/kênh/tháng), `fascinating` (tối đa 1 lần/video), `journey` (nghĩa bóng).
-
-### Không làm
-- Không "clickbait nói dối": tiêu đề/thumbnail hứa điều gì, video phải trả lời điều đó.
-- Không kêu gọi "like & subscribe" ở đầu video; chỉ 1 lời kêu gọi nhẹ ở cuối.
-
-## 3. Cấu trúc kịch bản video dài (bắt buộc)
-| Phần | Thời lượng | Quy tắc |
+## 1. Định vị
+| | **Kênh A — [Tên]** | **Kênh B — [Tên]** |
 |---|---|---|
-| Cold open (hook) | 0:00–0:30 | Bí ẩn/khoảnh khắc mạnh nhất; không giới thiệu kênh |
-| Lời hứa | 0:30–0:50 | Người xem sẽ biết điều gì |
-| Chương 1…6–8 | 60–90 giây/chương | Đứng độc lập; câu đầu không bắt đầu bằng "And", "So", "As we saw"; kết bằng twist |
-| Cao trào / lời giải | 60–90 giây | Trả lời câu hỏi ở hook |
-| Kết | 15–20 giây | Gợi ý 1 video liên quan của kênh |
+| Ngách | Review SaaS, AI tool, sản phẩm công nghệ (SPVL) | Review sàn crypto, broker forex, công cụ giao dịch |
+| Lời hứa | *Honest, hands-on reviews of software and AI tools — we test them so you don't waste money.* | *Fact-checked reviews of trading platforms: licenses, real fees, real withdrawals.* |
+| Khán giả | Freelancer, marketer, chủ doanh nghiệp nhỏ, creator — Mỹ/Anh/Canada/Úc/châu Âu | Trader cá nhân ngoài Mỹ/Anh/Việt Nam (theo lọc quốc gia) |
+| Người dẫn | **Người dẫn AI** trông như người thật (mục 2) | **Không người dẫn AI** — lời kể trên hình |
+| Không làm | Chủ đề tài chính/y tế/pháp lý; review sản phẩm chưa test | Lời khuyên đầu tư; hứa lợi nhuận; tín hiệu giao dịch; sàn không giấy phép cấp 1; nội dung tiếng Việt |
 
-Tổng 1.400–1.600 từ ≈ 10 phút (150 từ/phút).
+## 2. Người dẫn AI (chỉ Kênh A)
+| Mục | Giá trị |
+|---|---|
+| Tên gọi trên kênh | [Tên host] — nhân vật **hư cấu** |
+| Ngoại hình | [30–35 tuổi, phong cách smart-casual, áo màu trung tính, kính tuỳ chọn] — **không giống người nổi tiếng/người thật** (đã kiểm tra bằng tìm ảnh ngược) |
+| Bối cảnh | Studio làm việc hiện đại, ánh sáng ấm, màn hình mờ phía sau, cây xanh; nền cố định |
+| Ảnh gốc | `00_BIBLE/host/host_master.png` (+ 3 góc) |
+| HeyGen | Avatar ID: `[điền]` · model Avatar IV · khung 16:9 và 9:16 |
+| Giọng | ElevenLabs Voice ID: `[điền]` (dùng chung cho lời kể) |
+| Người dẫn nói gì | Hook, công khai, chuyển phần, ưu/nhược, kết luận, kêu gọi (~20% thời lượng) |
+| Người dẫn **không** nói | "I've used it for months", "I personally", "my clients"… — dùng **"we tested… for [số ngày thật]"**, **"in our tests"** |
 
-## 4. Phong cách hình ảnh
-**Chuỗi phong cách (dán vào cuối MỌI prompt ảnh/video):**
+## 3. Giọng văn (tiếng Anh Mỹ)
+- Người test trung thực, thẳng thắn, cụ thể: số liệu, thời gian, giá, giới hạn gói.
+- Luôn có **cả ưu và nhược**; nói rõ "who should NOT buy this".
+- Câu ngắn (12–16 từ). Mỗi phần mở bằng 1 câu hỏi/vấn đề cụ thể, kết bằng 1 cú chốt.
+- Điều chưa test: nói rõ *"We didn't test X"*.
+- Giá luôn kèm thời điểm: *"$29 a month as of October 2026"*.
+
+### Từ & câu cấm
+- Văn phong sáo rỗng: `game-changer`, `revolutionary`, `delve`, `unlock`, `supercharge`, `seamless`, `elevate`, `in today's fast-paced world`, `let's dive in`, `buckle up`, `it's important to note`.
+- Cam kết sai: `guaranteed`, `risk-free`, `100% safe`, `you will make money`, `get rich`, `passive income guaranteed`, `best for everyone`.
+- Kênh B thêm: `you should buy/sell/invest`, `this is a great investment`, `easy profits`, tín hiệu/giá mục tiêu.
+- Lời chứng thực giả: không trích "khách hàng" không có thật; chỉ trích review công khai có link.
+
+## 4. Câu công khai & cảnh báo chuẩn (dán nguyên văn)
+**Affiliate — nói trong 30 giây đầu (cả 2 kênh):**
+> *"Quick note: some links below are affiliate links. If you sign up, we may earn a commission at no extra cost to you. We test everything ourselves, and our opinions are our own."*
+
+**Người dẫn AI — chữ trên hình 30 giây đầu (Kênh A):** `AI-generated presenter · Testing & opinions by the [Tên kênh] team`
+
+**Dòng đầu mô tả (cả 2 kênh):**
+> *"Disclosure: This video contains affiliate links — we may earn a commission if you sign up, at no extra cost to you. [Kênh A: The presenter is AI-generated; all testing is done by our team.]"*
+
+**Amazon (khi có link Amazon):** *"As an Amazon Associate I earn from qualifying purchases."*
+
+**Kênh B — cảnh báo rủi ro (nói đầu + cuối video, chữ cố định trên mọi short, đầu mô tả):**
+> *"This video is for information only and is not financial advice. Trading forex, CFDs and crypto involves a high risk of losing money. [XX]% of retail CFD accounts lose money with [broker] (broker's own disclosure, [date]). Services are not available in all countries."*
+
+Chữ trên short Kênh B: `Not financial advice · Capital at risk`
+
+## 5. Cấu trúc kịch bản
+Theo [docs/03 mục 3](../docs/03-dinh-dang-do-dai.md#3-cấu-trúc-kịch-bản-review-dạng-module-để-cắt-short-không-phải-sửa): video dài 15–20 phút (2.250–3.000 từ), phần độc lập, công khai ở 30 giây đầu, Kênh B có cảnh báo đầu + cuối.
+
+## 6. Phong cách hình
+**Chuỗi phong cách cảnh người thật AI (dán cuối mọi prompt Veo/Nano Banana):**
 ```
-cinematic historical reconstruction, painterly realism, warm golden-hour light, muted earth tones with teal shadows, 35mm film grain, volumetric haze, subject centered, centered composition, no text, no letters, no watermark, no logos, no modern objects
+photorealistic, natural skin texture, candid documentary style, soft daylight, modern workspace, shallow depth of field, 35mm lens, subject centered, centered composition, no text, no logos, no watermark
 ```
 | Quy tắc | Chi tiết |
 |---|---|
-| Bố cục | Chủ thể ở giữa khung (để cắt 9:16 được) |
-| Góc máy ưu tiên | Toàn cảnh, trung cảnh, flycam chậm, dolly-in chậm |
-| Tránh | Cận cảnh bàn tay, khuôn mặt đang nói, chữ viết, đám đông chen chúc |
-| Ảnh tham chiếu | Thư mục `00_BIBLE/ref/` — 5 ảnh phong cách chuẩn; mỗi nhân vật lặp lại có 3 ảnh (chính diện, nghiêng, toàn thân) |
-| Chuyển cảnh đặc trưng | Bản đồ cổ cuộn/la bàn (template CapCut) |
+| Cảnh người AI | Người dùng laptop/điện thoại/sản phẩm, nhóm họp, người phản ứng trước màn hình; **không nói, không nhìn thẳng ống kính kiểu tư vấn** (Kênh B) |
+| Tránh | Cận cảnh bàn tay, chữ trên màn hình giả, logo thương hiệu do AI vẽ, người giống người nổi tiếng |
+| Quay màn hình | 1080p 30fps; ẩn email/thông tin cá nhân; con trỏ nổi bật; zoom vào chỗ thao tác; dừng 2–3 giây ở mỗi màn hình quan trọng |
+| Đồ hoạ | Template: bảng giá (có dòng "as of"), bảng so sánh, thẻ điểm 1–10, thẻ "Who it's for / not for", thẻ giấy phép (Kênh B) |
+| SPVL | Ảnh/video từ media kit chính thức; cảnh người dùng AI tạo từ ảnh sản phẩm thật, ghi `Illustration` |
+| Bố cục | Chủ thể ở giữa khung (cắt 9:16 được) |
 
-## 5. Giọng đọc
-| Mục | Giá trị |
-|---|---|
-| Công cụ | ElevenLabs |
-| Giọng | [Tên giọng] — Voice ID: `[điền]` |
-| Model | Model đa ngôn ngữ chất lượng cao (không dùng model "Flash" cho video dài) |
-| Thiết lập | Stability ~50%, Similarity ~75%, Style ~15%, tốc độ 1.0 (ghi lại thiết lập thực tế sau khi thử) |
-| Nghỉ giữa chương | 0,5–0,8 giây |
+### Thumbnail
+- **Kênh A:** mặt người dẫn (biểu cảm rõ) 40% trái + logo/giao diện sản phẩm bên phải + **≤ 4 từ**; màu kênh [mã màu]; đọc được ở 160 px.
+- **Kênh B:** giao diện nền tảng / con số phí / huy hiệu giấy phép + ≤ 4 từ; **không mặt người AI kiểu "chuyên gia"**.
+- 3 phương án cho A/B test.
 
-### Quy tắc viết bản đọc (cho giọng AI)
-- Viết số thành chữ: `1177 BC` → `eleven seventy-seven B.C.`; `3,000` → `three thousand`; `5th century` → `fifth century`.
-- Viết đầy đủ chữ viết tắt: `approx.` → `approximately`; `km` → `kilometers`.
-- Tên riêng khó: dùng cách viết phiên âm ở bảng 6 trong **bản đọc** (bản phụ đề vẫn giữ chính tả gốc).
+## 7. Giọng đọc & quy tắc bản đọc
+- 1 giọng cố định, model đa ngôn ngữ chất lượng cao, tốc độ 1.0; xuất `host_*.mp3` và `vo_*.mp3`.
+- Viết số & giá thành chữ: `$29.99/mo` → `twenty-nine ninety-nine a month`; `0.8 pips` → `zero point eight pips`; `2FA` → `two-factor authentication`.
 
-## 6. Từ điển phát âm (bổ sung dần)
+### Từ điển phát âm (bổ sung dần)
 | Chính tả (phụ đề) | Viết cho giọng đọc |
 |---|---|
-| Göbekli Tepe | geh-BECK-lee TEH-peh |
-| Ubar | oo-BAR |
-| Herodotus | heh-ROD-uh-tus |
-| Hatshepsut | hat-SHEP-soot |
-| Ramesses | RAM-uh-seez |
-| Teotihuacan | tay-oh-tee-wah-KAHN |
-| Ragnarök | RAG-nuh-rok |
-| Yggdrasil | IG-druh-sil |
-| Xerxes | ZURK-seez |
-| cuneiform | kyoo-NEE-uh-form |
+| HeyGen | HAY-jen |
+| Synthesia | sin-THEE-zhuh |
+| Canva | KAN-vuh |
+| Veo | VAY-oh |
+| cTrader | see-TRAY-der |
+| Bybit | BY-bit |
+| OKX | O-K-X |
+| CySEC | SY-sec |
+| ASIC | AY-sick |
+| Exness | EX-ness |
 
-## 7. Phụ đề & chữ trên hình
+## 8. Phụ đề & chữ trên hình
 | | Video dài | Short |
 |---|---|---|
-| Hình thức | File SRT tải lên YouTube | Cháy vào hình |
-| Font | [Font kênh, ví dụ Inter SemiBold] | [Ví dụ Montserrat ExtraBold] |
-| Màu | Trắng, viền đen | Trắng viền đen; từ khoá vàng `#FFD400` |
-| Giới hạn | ≤ 42 ký tự/dòng, ≤ 2 dòng | 1–4 từ/lần hiện, vị trí 1/3 dưới, chừa lề phải 15% |
+| Hình thức | SRT tải lên YouTube | Cháy vào hình |
+| Font | [Font kênh] | [Font đậm] |
+| Giới hạn | ≤ 42 ký tự/dòng, ≤ 2 dòng | 1–4 từ/lần hiện, 1/3 dưới, chừa lề phải 15% |
 
-## 8. Thumbnail & tiêu đề
-- Thumbnail: **1 chủ thể + 1 yếu tố bí ẩn**, tối đa **4 từ**, tương phản cao, tông vàng–xanh ngọc của kênh, đọc được ở kích thước 160 px.
-- Tiêu đề: **≤ 60 ký tự**, từ khoá chính trong 40 ký tự đầu; công thức: *Tò mò + Cụ thể* — "The City That Vanished Under the Sand", "What Really Happened to the Sea Peoples?".
-- Luôn làm **3 phương án** thumbnail để dùng tính năng thử nghiệm A/B của YouTube.
-
-## 9. Âm nhạc & âm thanh
-- Nhạc chủ đề riêng: [tên bài Suno, tạo khi đang là thành viên Pro — lưu link]. Nhạc nền: YouTube Audio Library (thể loại Cinematic/Ambient).
-- Nhạc nền thấp hơn giọng ~18–20 dB; xuất -14 LUFS.
-- Tắt âm thanh gốc của clip Veo, trừ tiếng môi trường đã chọn.
-- **Không dùng nhạc trong thư viện CapCut cho YouTube.**
+## 9. Âm nhạc
+YouTube Audio Library (Corporate/Ambient/Electronic nhẹ) hoặc nhạc chủ đề Suno (tạo khi là thành viên Pro, lưu link). Nhạc thấp hơn giọng 18–20 dB. **Không dùng nhạc thư viện CapCut.**
 
 ## 10. Công khai nội dung AI
-- Cảnh tái hiện **chân thực** → bật "Altered or synthetic content" khi đăng + dòng cuối mô tả: *"Visuals are AI-generated reconstructions for illustration."*
-- Phong cách kỳ ảo/thần thoại rõ ràng → không bắt buộc bật nhãn, vẫn giữ dòng mô tả.
+- **Mọi video Kênh A**: bật "Altered or synthetic content" (người dẫn AI trông như thật) + chữ trên hình + dòng mô tả.
+- **Kênh B**: bật nhãn khi có cảnh người thật AI.
 
-## 11. Danh mục series
-| Series | Mô tả | Tần suất |
-|---|---|---|
-| Lost Worlds | Nền văn minh/thành phố biến mất | 2/tuần |
-| Unsolved | Bí ẩn chưa có lời giải | 1/tuần |
-| Daily Life In… | Cuộc sống thường ngày thời cổ đại | 1/tuần |
-| Myths Retold | Thần thoại kể như phim (phong cách kỳ ảo) | 1/tuần |
+## 11. Series
+| Kênh | Series | Mô tả | Tần suất (gói B) |
+|---|---|---|---|
+| A | Honest Review | Review 1 sản phẩm, 15–20 phút | 2/tuần |
+| A | Head-to-Head | A vs B, 18–25 phút | 1/tuần |
+| A | Best Tools For… | Top 5 theo nhu cầu (luân phiên với Head-to-Head) | 2/tháng |
+| B | Platform Check | Review 1 sàn/broker: giấy phép, phí, nạp/rút | 1/tuần |
+| B | Fee Showdown | So sánh phí/spread thực đo | 1/tuần |
 
 ## 12. Nhật ký thay đổi Bible
 | Ngày | Thay đổi | Lý do (mã lỗi / số liệu) |

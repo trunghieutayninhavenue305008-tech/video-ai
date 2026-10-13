@@ -4,6 +4,7 @@
 Ví dụ:
     python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 8_shorts
     python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 8_shorts --mode blur
+    python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 9_shorts --mode blur --note "Not financial advice · Capital at risk"
     python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 8_shorts --plan-only   # chỉ để Claude chọn đoạn
     python tools/cat_short.py final_16x9.mp4 subtitles.srt --out 8_shorts --plan 8_shorts/plan.json  # cắt theo plan có sẵn
 
@@ -107,23 +108,25 @@ CLIP_SCHEMA = {
     "additionalProperties": False,
 }
 
-SYSTEM_PROMPT = """You are the Shorts editor of an English-language YouTube documentary channel (history & mysteries, global audience).
-You receive the numbered subtitle cues of a finished long-form video. Pick segments that work as standalone vertical Shorts.
+SYSTEM_PROMPT = """You are the Shorts editor of an English-language YouTube review channel (software, AI tools, tech products, trading platforms; global audience).
+You receive the numbered subtitle cues of a finished long-form review. Pick segments that work as standalone vertical Shorts.
 
 Rules for every segment:
 - It is a run of consecutive cues from first_cue to last_cue (inclusive) and lasts between {min_s} and {max_s} seconds; aim for 30-50 seconds.
 - The first cue must make sense on its own: never start on a cue that opens with a connector or a pronoun pointing back ("And", "So", "But", "This", "That", "It", "They", "As we saw", "Meanwhile").
 - The first sentence should create curiosity; the last cue should land a payoff, twist or surprising fact.
-- Prefer self-contained chapters. Skip the channel outro / calls to action.
+- Prefer self-contained parts: one feature demo, the pricing breakdown, a head-to-head comparison, the verdict. Skip the disclosure, the channel outro and calls to action.
+- Only use claims that are in the transcript. Never pick a segment that promises profits, gives investment advice or presents a personal testimonial.
 - Segments must not overlap. Order them from strongest to weakest.
 
 Text fields (English, no emojis in titles):
 - title: 3-6 word internal name.
 - reason: one sentence on why it works as a Short.
 - youtube_title: at most 60 characters, keyword early.
-- tiktok_caption: at most 150 characters, no hashtags inside.
+- tiktok_caption: at most 150 characters, no hashtags inside; end with "(affiliate link in description)" when a product with a link is named.
 - instagram_caption: at most 2 sentences.
 - facebook_caption: at most 2 sentences.
+- Never use the words guaranteed, risk-free, profit, get rich in any field.
 - hashtags: 3-5 items, each starting with '#', no spaces."""
 
 
@@ -219,6 +222,7 @@ ScaledBorderAndShadow: yes
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Short,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,0,2,80,160,{margin_v},1
+Style: Note,{font},44,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,3,10,0,8,80,160,{note_margin_v},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -246,9 +250,21 @@ def chunk_cue(cue: Cue, words_per_chunk: int) -> list[tuple[float, float, str]]:
     return out
 
 
+def _ass_text(text: str) -> str:
+    return text.replace("\\", "\\\\").replace("{", "(").replace("}", ")")
+
+
 def write_ass(path: Path, cues: list[Cue], clip_start: float, clip_end: float,
-              font: str, size: int, words_per_chunk: int) -> None:
-    lines = [ASS_HEADER.format(w=OUT_W, h=OUT_H, font=font, size=size, margin_v=int(OUT_H * 0.27))]
+              font: str, size: int, words_per_chunk: int, note: str | None = None,
+              burn_subs: bool = True) -> None:
+    """Viết file phụ đề ASS cho 1 short. `note` = dòng cố định suốt short (ví dụ cảnh báo rủi ro)."""
+    lines = [ASS_HEADER.format(w=OUT_W, h=OUT_H, font=font, size=size, margin_v=int(OUT_H * 0.27),
+                               note_margin_v=int(OUT_H * 0.16))]
+    if note:
+        lines.append(f"Dialogue: 1,{_ass_ts(0)},{_ass_ts(clip_end - clip_start)},Note,,0,0,0,,{_ass_text(note)}")
+    if not burn_subs:
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        return
     for cue in cues:
         if cue.end <= clip_start or cue.start >= clip_end:
             continue
@@ -256,8 +272,7 @@ def write_ass(path: Path, cues: list[Cue], clip_start: float, clip_end: float,
             s, e = max(s, clip_start) - clip_start, min(e, clip_end) - clip_start
             if e - s < 0.05:
                 continue
-            safe = text.replace("\\", "\\\\").replace("{", "(").replace("}", ")")
-            lines.append(f"Dialogue: 0,{_ass_ts(s)},{_ass_ts(e)},Short,,0,0,0,,{safe}")
+            lines.append(f"Dialogue: 0,{_ass_ts(s)},{_ass_ts(e)},Short,,0,0,0,,{_ass_text(text)}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -313,6 +328,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--plan-only", action="store_true", help="Chỉ để Claude chọn đoạn, không cắt video")
     p.add_argument("--model", default=DEFAULT_MODEL, help=f"Model Claude (mặc định {DEFAULT_MODEL})")
     p.add_argument("--no-subs", action="store_true", help="Không cháy phụ đề vào short")
+    p.add_argument("--note", help='Dòng chữ cố định phía trên suốt short, ví dụ "Not financial advice · Capital at risk"')
     p.add_argument("--font", default="Arial", help="Font phụ đề (mặc định Arial)")
     p.add_argument("--font-size", type=int, default=78, help="Cỡ chữ phụ đề, pixel trên khung 1080x1920")
     p.add_argument("--words", type=int, default=4, help="Số từ tối đa mỗi lần hiện phụ đề (mặc định 4)")
@@ -356,9 +372,10 @@ def main(argv: list[str] | None = None) -> int:
         name = f"short_{i:02d}.mp4"
         if not a.plan_only:
             ass_name = None
-            if not a.no_subs:
+            if not a.no_subs or a.note:
                 ass_name = f"short_{i:02d}.ass"
-                write_ass(a.out / ass_name, cues, start, end, a.font, a.font_size, max(1, a.words))
+                write_ass(a.out / ass_name, cues, start, end, a.font, a.font_size, max(1, a.words),
+                          note=a.note, burn_subs=not a.no_subs)
             print(f"[{i}/{len(clips)}] {name}: {fmt_ts(start)} → {fmt_ts(end)} ({end - start:.1f} giây) — {clip['title']}")
             render_clip(a.video, a.out, name, start, end, a.mode, ass_name, not a.no_loudnorm)
         rows.append({

@@ -1,36 +1,53 @@
-# BRIEF VIDEO — V[___]
+# BRIEF VIDEO REVIEW — V[___]
 
-> Claude điền ở Bước 1 (dùng prompt mục 1 trong [thu-vien-prompt.md](thu-vien-prompt.md)). Người vận hành chỉ duyệt và chọn.
+> Claude điền ở Bước 1 (prompt mục 1 trong [thu-vien-prompt.md](thu-vien-prompt.md)). Người vận hành duyệt, rồi bổ sung **ghi chú test** sau Bước 2.
 
 | Mục | Nội dung |
 |---|---|
 | Mã video | V___ |
-| Series | Lost Worlds / Unsolved / Daily Life In… / Myths Retold |
+| Kênh | A (Tech & AI Tools) / B (Crypto & Forex) |
+| Mảng | SaaS / AI tool / SPVL / Crypto / Forex |
+| Sản phẩm | Tên, website chính thức |
+| Dạng video | Review đơn / So sánh A vs B / "Best X for Y" |
 | Tiêu đề tạm (EN) | |
-| Câu hỏi trung tâm (hook) | Câu hỏi mà video sẽ trả lời |
-| Góc kể khác biệt | Vì sao video này khác 5 video top đầu cùng chủ đề trên YouTube |
+| Người xem mục tiêu | Ai đang tìm sản phẩm này, đang phân vân điều gì |
+| Câu hỏi trung tâm | Video sẽ trả lời câu hỏi gì ("Is X worth $29/month for a solo marketer?") |
+| Chương trình affiliate | Tên chương trình · hoa hồng · trạng thái (đã duyệt/đang chờ) · link (qua trang trung gian) |
+| Kênh B — giấy phép | Cơ quan cấp phép · số giấy phép · link tra cứu · ngày tra · ảnh chụp bằng chứng |
 | Cấp chất lượng | Tiết kiệm / Tiêu chuẩn / Cao cấp |
-| Độ dài mục tiêu | 10–12 phút (1.400–1.800 từ) |
 | Video liên quan để gợi ý cuối | V___ |
 
-## Dàn ý chương (6–8 chương, mỗi chương đứng độc lập)
-| # | Tên chương | Câu mở (hook nhỏ) | Twist cuối chương | Làm short? |
+## Bảng giá (ghi ngày lấy dữ liệu: __/__/____)
+| Gói | Giá/tháng | Giá/năm | Giới hạn chính |
+|---|---|---|---|
+| | | | |
+
+## Đối thủ để so sánh (2–3)
+| Đối thủ | Điểm hơn | Điểm kém | Giá |
+|---|---|---|---|
+| | | | |
+
+## Ý kiến người dùng (có link nguồn: G2, Capterra, Trustpilot, Reddit…)
+- Khen phổ biến: … ([link])
+- Chê phổ biến: … ([link])
+
+## Dàn ý phần (mỗi phần đứng độc lập)
+| # | Phần | Câu mở | Cảnh màn hình cần quay | Cú chốt | Làm short? |
+|---|---|---|---|---|---|
+| 1 | Tính năng … | | | | ☐ |
+| 2 | Tính năng … | | | | ☐ |
+| 3 | Tính năng … | | | | ☐ |
+| 4 | Tính năng … | | | | ☐ |
+| 5 | Giá & gói đáng mua | | | | ☐ |
+| 6 | So sánh đối thủ | | | | ☐ |
+| 7 | Kết luận: ai nên / không nên | | | | ☐ |
+
+## GHI CHÚ TEST (điền sau Bước 2 — kịch bản chỉ được khẳng định điều có ở đây)
+| Ngày test | Tài khoản/gói | Việc đã làm | Kết quả có số liệu | File quay / ảnh chụp |
 |---|---|---|---|---|
-| 1 | | | | ☐ |
-| 2 | | | | ☐ |
-| 3 | | | | ☐ |
-| 4 | | | | ☐ |
-| 5 | | | | ☐ |
-| 6 | | | | ☐ |
+| | | | | SCR01.mp4 |
 
-## Nguồn kiểm chứng (tối thiểu 5, ưu tiên học thuật/bảo tàng/bách khoa uy tín)
-1.
-2.
-3.
-4.
-5.
-
-## Rủi ro cần lưu ý
-- Điểm còn tranh cãi giữa các nhà nghiên cứu:
-- Hình ảnh nhạy cảm cần tránh:
-- Có cần bật nhãn nội dung AI chân thực? ☐ Có ☐ Không
+## Rủi ro
+- Tính năng đang beta/thay đổi:
+- Điều không test được (ghi rõ trong video là "not tested"):
+- Kênh B — điều kiện sàn không phục vụ quốc gia nào:

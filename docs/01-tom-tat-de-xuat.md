@@ -1,57 +1,56 @@
 # 01 — Tóm tắt đề xuất (đọc 3 phút)
 
-> Mục tiêu: xây **xưởng sản xuất video 100% bằng AI** cho **thị trường toàn cầu (tiếng Anh)**, 1 người vận hành, **Claude làm "bộ não" trung tâm**, bắt đầu sản xuất ngay sau buổi review thứ Tư 14/10/2026.
+> Mục tiêu: xây **xưởng video review 100% AI** cho **thị trường toàn cầu (tiếng Anh)** — review **SaaS, AI tool, sản phẩm vật lý (SPVL), Crypto, Forex** — video dài **tối thiểu 15 phút**, hình ảnh **ưu tiên người thật** (người dẫn AI trông như người thật + cảnh người thật do AI tạo), **Claude làm "bộ não"**. Bắt đầu sản xuất ngay sau buổi review thứ Tư 14/10/2026.
 
 ## 1. Đề xuất cốt lõi trong 10 dòng
 
 | # | Hạng mục | Đề xuất | Chi tiết |
 |---|---|---|---|
-| 1 | Thị trường & ngôn ngữ | **Global, tiếng Anh (giọng Mỹ)** → giai đoạn 2 lồng tiếng Tây Ban Nha, Bồ Đào Nha, Hindi… | [02](02-thi-truong-ngach-nen-tang.md) |
-| 2 | Ngách nội dung | **Lịch sử & Bí ẩn** (kênh 1) — Khoa học/Vũ trụ là kênh 2 | [02](02-thi-truong-ngach-nen-tang.md) |
-| 3 | Nền tảng | **YouTube = nguồn doanh thu chính**; Shorts/TikTok/Reels = kéo người xem | [02](02-thi-truong-ngach-nen-tang.md) |
-| 4 | Định dạng | Video dài **8–15 phút** (chuẩn 10 phút) + Short **20–60 giây** (tối đa 90 giây) | [03](03-dinh-dang-do-dai.md) |
-| 5 | Mô hình | **Làm video dài trước → cắt 5 short** + 1 short làm riêng; kịch bản viết dạng **module** để cắt không cần sửa | [03](03-dinh-dang-do-dai.md) |
-| 6 | Công cụ | **Claude** (não) · **Veo 3.1/Flow** (video) · **Nano Banana Pro** (ảnh) · **ElevenLabs** (giọng) · **CapCut Pro** (dựng) · **OpusClip/tool Claude** (cắt short) | [05](05-bo-cong-cu.md) |
-| 7 | Ngân sách | Gói đề xuất **B: ~US$515 ≈ 13,6 triệu ₫/tháng** → **~682 nghìn ₫ cho 1 video dài kèm 5 short** | [06](06-ngan-sach.md) |
-| 8 | Năng suất | 1 người: **tối thiểu 3 video dài/tuần**, **chuẩn 1 video dài + 6 short/ngày**, **tối đa 2 video dài/ngày** | [07](07-nang-suat-lich-dang.md) |
-| 9 | Chất lượng | **2 cổng duyệt** + "Bible kênh" + checklist → chặn lỗi lặt vặt từ gốc, mục tiêu **<10% video phải sửa** | [08](08-chong-loi-lat-vat.md) |
-| 10 | Mục tiêu 90 ngày | **Đạt điều kiện kiếm tiền YouTube (YPP) trước 31/01/2027** — trước khi ngưỡng tăng gấp đôi | [10](10-kpi-lo-trinh.md) |
+| 1 | Cấu trúc | **2 kênh**: **Kênh A — Tech & AI Tools** (SaaS, AI tool, SPVL công nghệ) và **Kênh B — Crypto & Forex** | [02](02-thi-truong-ngach-nen-tang.md) |
+| 2 | Vì sao tách | YouTube **không trả tiền cho cả kênh** nếu dùng nhân vật AI tư vấn tài chính → nội dung tài chính phải ở kênh riêng, **không có người dẫn AI** | [09](09-chinh-sach-phap-ly-rui-ro.md) |
+| 3 | Hình ảnh "người thật" | Kênh A: **người dẫn AI trông như người thật** (HeyGen) ~20% + cảnh người thật do AI tạo ~20% + **quay màn hình sản phẩm thật** ~40%. Kênh B: không người dẫn AI | [03](03-dinh-dang-do-dai.md) |
+| 4 | Độ dài | Video dài **tối thiểu 15 phút**, chuẩn 15–20, tối đa 25 (bài so sánh). Short 20–90 giây | [03](03-dinh-dang-do-dai.md) |
+| 5 | Mô hình | Làm video dài trước → **cắt 5 short** + 1 short riêng; kịch bản review chia **phần độc lập** (tính năng, giá, so sánh, kết luận) | [03](03-dinh-dang-do-dai.md) |
+| 6 | Doanh thu | **Affiliate có tiền từ video đầu tiên** (SaaS 20–50% định kỳ, forex CPA US$200–1.200, crypto 20–50% phí) + quảng cáo YouTube sau khi vào YPP | [06](06-ngan-sach.md) |
+| 7 | Công cụ | **Claude** · Veo 3.1 · Nano Banana Pro · **HeyGen** (người dẫn) · ElevenLabs · CapCut Pro · OBS (quay màn hình) · tool cắt short | [05](05-bo-cong-cu.md) |
+| 8 | Ngân sách | Gói đề xuất **B: ~US$761 ≈ 20,2 triệu ₫/tháng** → **~1,01 triệu ₫ cho 1 video dài 18 phút kèm 5 short** | [06](06-ngan-sach.md) |
+| 9 | Năng suất (1 người) | Tối thiểu 2–3 video dài/tuần · **chuẩn 1 video dài + 6 short/ngày** · tối đa 1,5 video dài/ngày | [07](07-nang-suat-lich-dang.md) |
+| 10 | Điều kiện Kênh B | **Chỉ đăng khi có ý kiến luật sư** (Nghị định 284/2026 phạt tổ chức quảng cáo dịch vụ tài sản mã hoá chưa cấp phép 180–200 triệu ₫; Việt Nam chưa cấp phép sàn forex) | [09](09-chinh-sach-phap-ly-rui-ro.md) |
 
 ## 2. Vì sao phải bắt đầu ngay
 
-- **Từ 01/02/2027, kênh mới cần gấp đôi điều kiện để bật kiếm tiền**: 8.000 giờ xem (thay vì 4.000) hoặc 20 triệu view Shorts (thay vì 10 triệu). YouTube công bố ngày 10/08/2026 (theo TechTimes và nhiều nguồn khác; *cần xác nhận trên blog chính thức của YouTube*). Kênh đã vào YPP trước hạn được giữ ngưỡng cũ.
-- Ra mắt kênh ngày **22/10/2026** → còn **~14 tuần** đến 31/01/2027 ≈ **57 video dài**. Muốn đủ 4.000 giờ xem, mỗi video dài cần trung bình **~1.050 lượt xem** với thời lượng xem trung bình 4 phút, cộng 1.000 người đăng ký. Đây là mục tiêu khó nhưng làm được.
-- Công cụ AI đã đủ chín: Veo 3.1 có âm thanh, dọc 9:16 gốc, nhân vật nhất quán; chi phí thuê bao rẻ hơn **~14 lần** so với trả theo lượt.
+- **Từ 01/02/2027, kênh mới cần gấp đôi điều kiện bật kiếm tiền YouTube** (8.000 giờ xem thay vì 4.000, hoặc 20 triệu view Shorts). Theo TechTimes 11/08/2026 và nhiều nguồn — *cần xác nhận trên blog YouTube*. Kênh A ra mắt 22/10 → **43 video dài** đến 31/01, mỗi video cần trung bình **~1.030 lượt xem** (thời lượng xem TB 5,4 phút) + 1.000 người đăng ký.
+- **Affiliate không cần chờ YPP** — có doanh thu ngay khi người xem bấm link và mua/đăng ký.
 
-## 3. "100% AI" nghĩa là gì trong kế hoạch này
+## 3. "100% AI" và "người thật" trong kế hoạch này
 
-- **100% hình ảnh, chuyển động, giọng đọc, nhạc, phụ đề, cắt ghép do AI tạo.** Không quay, không thu âm, không lộ mặt.
-- **Con người chỉ làm 3 việc:** chọn hướng nội dung (dựa trên gợi ý của Claude), bấm chạy công cụ, và **duyệt ở 2 cổng chất lượng**.
-- Đây không phải điểm yếu mà là **điều kiện bắt buộc**: YouTube không trả tiền cho nội dung AI "sản xuất hàng loạt, rập khuôn" (chính sách *inauthentic content*, làm rõ thêm ngày 16/07/2026). Sự lựa chọn và kiểm duyệt của con người là thứ giữ kênh được kiếm tiền.
+- **AI tạo 100%**: người dẫn, cảnh người thật, giọng đọc, nhạc, phụ đề, dựng, cắt short, kịch bản, SEO.
+- **Dữ liệu sản phẩm là thật**: người vận hành dùng thử sản phẩm và quay màn hình (~40 phút/video). Đây là **bắt buộc** — luật Mỹ (FTC, 16 CFR Part 465, hiệu lực 10/2024) cấm review/lời chứng thực do AI bịa ra hoặc tự nhận trải nghiệm không có thật; review không có hình sản phẩm thật cũng dễ bị YouTube coi là "không có giá trị".
+- **Người dẫn AI là nhân vật hư cấu, luôn công khai là AI**, không giống người thật nào, không bao giờ nói "tôi đã dùng 30 ngày" nếu đội chưa thật sự test.
 
 ## 4. Con số chính (từ [bảng tính](../ke-hoach/bang-tinh-ngan-sach-va-van-hanh.xlsx))
 
 | Chỉ tiêu | Gói A — Thử nghiệm | **Gói B — Tiêu chuẩn (đề xuất)** | Gói C — Mở rộng |
 |---|---|---|---|
-| Chi phí công cụ/tháng (gồm 10% dự phòng) | ~US$79 ≈ 2,1 triệu ₫ | **~US$515 ≈ 13,6 triệu ₫** | ~US$1.070 ≈ 28,4 triệu ₫ |
-| Video dài/tháng | 4 | **20** | 44 |
-| Short/tháng (cắt + làm riêng) | 20 | **120** | 240 |
-| Chi phí trọn gói/1 video dài (kèm 5 short) | ~US$19,8 ≈ 525 nghìn ₫ | **~US$25,7 ≈ 682 nghìn ₫** | ~US$24,3 ≈ 645 nghìn ₫ |
-| Nhân sự | 1 người (học việc) | **1 người** | 2 người |
+| Chi phí/tháng (gồm 10% dự phòng + ngân sách dùng thử sản phẩm) | ~US$166 ≈ 4,4 triệu ₫ | **~US$761 ≈ 20,2 triệu ₫** | ~US$1.562 ≈ 41,4 triệu ₫ |
+| Video dài/tháng (Kênh A + Kênh B) | 4 + 0 | **12 + 8** | 24 + 16 |
+| Short/tháng | 20 | **120** | 240 |
+| Trọn gói / 1 video dài kèm 5 short | ~1,10 triệu ₫ | **~1,01 triệu ₫** | ~1,03 triệu ₫ |
+| Nhân sự | 1 người | **1 người** | 2 người |
 
-Hoà vốn (gói B, RPM giả định US$6): **~4.100 lượt xem/video dài** để bù chi phí công cụ; **~8.900 lượt xem/video dài** nếu tính cả 15 triệu ₫ lương (giả định). Doanh thu chỉ có sau khi vào YPP.
+**Hoà vốn** (gói B, cả 2 kênh, trước khi có quảng cáo YouTube, theo giả định phễu affiliate thận trọng): **~1.570 lượt xem/video dài/tháng** để bù chi phí công cụ; **~2.740** nếu tính cả 15 triệu ₫ lương (giả định). Nếu Kênh B không được mở: ~2.950 / ~5.140.
 
-## 5. Các quyết định cần chốt tại buổi review
+## 5. Quyết định cần chốt tại buổi review
 
 | # | Quyết định | Đề xuất của em | Phương án khác |
 |---|---|---|---|
-| Q1 | Ngách kênh 1 | Lịch sử & Bí ẩn | Khoa học & Vũ trụ; Thần thoại; Thiên nhiên |
-| Q2 | Ngôn ngữ | Tiếng Anh giọng Mỹ | Tiếng Anh + lồng tiếng ngay từ đầu |
-| Q3 | Gói ngân sách | Tuần đầu gói A → từ tuần 2 lên gói B | Đi thẳng gói B |
-| Q4 | Nhân sự | 1 người vận hành toàn thời gian | 1 người + 1 người kiểm duyệt bán thời gian |
-| Q5 | Mục tiêu 90 ngày | Đạt YPP trước 31/01/2027 | Chỉ đặt mục tiêu sản lượng |
-| Q6 | Nhận diện kênh | Không người dẫn, chỉ giọng kể + hình minh hoạ | Nhân vật AI cố định làm "host" |
-| Q7 | Nền tảng phụ | YouTube Shorts + Facebook/Instagram Reels; TikTok thử 30 ngày | Đủ 4 nền tảng ngay |
-| Q8 | Tên kênh & nhận diện | Claude đề xuất 10 tên → sếp chọn | Sếp tự đặt |
+| Q1 | Cấu trúc kênh | 2 kênh: A (SaaS, AI tool, SPVL) · B (Crypto, Forex) | 1 kênh chung (rủi ro mất kiếm tiền cả kênh) |
+| Q2 | Người dẫn Kênh A | Nhân vật AI hư cấu trông như người thật, công khai là AI | Nhân viên thật đứng hình |
+| Q3 | Kênh B | Chuẩn bị song song, **chỉ đăng khi có ý kiến luật sư**; không người dẫn AI | Người thật đứng hình cho Kênh B · hoặc bỏ Kênh B |
+| Q4 | Gói ngân sách | Tuần chuẩn bị gói A → từ 22/10 gói B | Đi thẳng gói B |
+| Q5 | Nhân sự | 1 người vận hành toàn thời gian | + 1 người dẫn thật cho Kênh B (bán thời gian) |
+| Q6 | Mục tiêu 90 ngày | Kênh A đạt YPP trước 31/01/2027; affiliate có doanh thu từ tháng 1 | Chỉ đặt mục tiêu sản lượng |
+| Q7 | Ngân sách test | US$150/tháng mua gói SaaS/AI tool + vốn nạp thử sàn ~US$1.000 (thu hồi được, khi Kênh B mở) | Chỉ dùng bản dùng thử miễn phí |
+| Q8 | Nhận diện | Claude đề xuất tên 2 kênh + nhân vật người dẫn; sếp chọn. Liên kết website review của công ty (nếu có) | Sếp tự đặt |
 
-> Sau khi chốt Q1–Q8, có thể chạy **Kế hoạch 7 ngày** ở [10-kpi-lo-trinh.md](10-kpi-lo-trinh.md) ngay ngày 15/10.
+> Sau khi chốt, chạy **Kế hoạch 7 ngày** ở [10-kpi-lo-trinh.md](10-kpi-lo-trinh.md) từ ngày 15/10.

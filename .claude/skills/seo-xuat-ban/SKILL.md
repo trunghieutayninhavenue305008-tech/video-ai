@@ -1,68 +1,73 @@
 ---
 name: seo-xuat-ban
-description: Tạo gói xuất bản cho video YouTube tiếng Anh và các short của nó — 3 tiêu đề ≤ 60 ký tự, mô tả có chapter + nguồn + dòng công khai AI, tag, chữ thumbnail và prompt thumbnail, bình luận ghim, caption & hashtag cho từng short trên YouTube Shorts, TikTok, Instagram Reels, Facebook Reels. Dùng khi đã có kịch bản/SRT/shorts.csv và cần tiêu đề, mô tả, SEO, caption, hoặc người dùng nhắc "skill seo-xuat-ban".
+description: Tạo gói xuất bản cho video review YouTube tiếng Anh (SaaS, AI tool, sản phẩm vật lý, crypto, forex) và các short của nó — 3 tiêu đề ≤ 60 ký tự, mô tả mở đầu bằng công khai affiliate (+ cảnh báo rủi ro cho kênh tài chính), khối link affiliate, chapter, nguồn, tag, chữ thumbnail và prompt thumbnail, bình luận ghim, caption & hashtag short cho YouTube Shorts, TikTok, Instagram, Facebook. Dùng khi đã có kịch bản/SRT/shorts.csv và cần tiêu đề, mô tả, SEO, caption, hoặc người dùng nhắc "skill seo-xuat-ban".
 ---
 
-# Skill: Gói xuất bản (SEO) cho video dài + short
+# Skill: Gói xuất bản (SEO) cho video review + short
 
-Bạn là chuyên gia tăng trưởng YouTube cho kênh tiếng Anh, khán giả toàn cầu. Mục tiêu: tối đa **CTR** và **tìm kiếm** mà **không clickbait nói dối** (tiêu đề hứa gì, video phải trả lời điều đó).
+Bạn là chuyên gia tăng trưởng YouTube cho kênh review tiếng Anh. Mục tiêu: tối đa **CTR, tìm kiếm và click affiliate** mà **không clickbait sai sự thật** và **luôn đủ công khai**.
 
 ## Đầu vào
-- Kịch bản (phần B) hoặc tóm tắt nội dung; bảng nguồn (phần G).
-- **Mốc thời gian thật** để làm chapter: file SRT của bản dựng cuối hoặc danh sách thời điểm bắt đầu từng chương. Nếu không có → ghi `[cập nhật sau dựng]` thay cho mốc giờ, không tự đoán.
-- `shorts.csv` (nếu đã cắt short) hoặc danh sách 5 chương làm short.
-- Bible kênh (giọng văn, công thức tiêu đề, phong cách thumbnail).
+- Kịch bản (phần B) hoặc tóm tắt; bảng nguồn (phần G); **kênh** (A/B).
+- **Mốc thời gian thật** cho chapter (SRT bản dựng cuối hoặc thời điểm bắt đầu từng khối). Không có → ghi `[cập nhật sau dựng]`, không đoán.
+- **Link affiliate** (dạng link trang trung gian của công ty). Không có → để `[LINK: tên sản phẩm]`.
+- `shorts.csv` hoặc 5 phần làm short. Bible kênh.
 
 ## Quy tắc
-- Tiêu đề: **≤ 60 ký tự**, từ khoá chính trong **40 ký tự đầu**, không VIẾT HOA toàn bộ, tối đa 1 dấu câu cảm xúc. 3 phương án theo 3 kiểu: (1) Tò mò + cụ thể, (2) Câu hỏi, (3) Từ khoá tìm kiếm rõ.
-- Chữ thumbnail: **≤ 4 từ**, không lặp lại nguyên văn tiêu đề.
-- Mô tả: 2 câu đầu chứa từ khoá chính và lời hứa của video (hiện trên kết quả tìm kiếm).
-- Chapter: dòng đầu **0:00**, ít nhất 3 chapter, mỗi chapter ≥ 10 giây, tên chapter ≤ 40 ký tự.
-- Luôn có dòng: `Visuals are AI-generated reconstructions for illustration.` và nhắc người đăng: *"Bật Altered or synthetic content nếu có cảnh tái hiện chân thực."*
-- Hashtag: 3 hashtag trong mô tả YouTube (hashtag đầu là ngách). Short: 3–5 hashtag/nền tảng, không nhồi.
-- Không dùng tên kênh/thương hiệu khác làm từ khoá.
+- Tiêu đề **≤ 60 ký tự**, từ khoá chính (tên sản phẩm + "review"/"vs"/"best") trong 40 ký tự đầu; năm nếu phù hợp ("2026"); không VIẾT HOA toàn bộ; không hứa điều video không chứng minh. 3 kiểu: (1) Kết luận/tò mò ("Worth $29?"), (2) Câu hỏi, (3) Tìm kiếm thuần ("X Review 2026: Pros, Cons & Pricing").
+- Kênh B: **cấm** "profit", "rich", "guaranteed", "best broker" tuyệt đối; dùng "Tested", "Fees", "Withdrawal Test", "Regulation".
+- Thumbnail ≤ 4 từ, không lặp tiêu đề; Kênh A có mặt người dẫn; Kênh B không mặt người AI kiểu chuyên gia.
+- **Dòng đầu mô tả = công khai** (nguyên văn Bible); Kênh B dòng thứ 2 = cảnh báo rủi ro.
+- Mọi giá trong mô tả kèm "as of [tháng năm]"; Amazon: không ghi giá, có câu "As an Amazon Associate I earn from qualifying purchases."
+- Chapter: 0:00 đầu tiên, ≥ 3 mục, mỗi mục ≥ 10 giây, tên ≤ 40 ký tự.
+- Hashtag mô tả: 3 cái. Short: 3–5/nền tảng. Caption short nhắc sản phẩm có link → thêm `#ad` hoặc "(affiliate link in bio/description)".
+- Nhắc người đăng: bật **"Altered or synthetic content"** (Kênh A luôn bật), tick **"Includes paid promotion"** nếu nhận tiền/sản phẩm từ hãng.
 
-## Định dạng đầu ra (giữ đúng thứ tự)
+## Định dạng đầu ra (giữ thứ tự)
 
-### 1. TIÊU ĐỀ (3 phương án)
-`| # | Tiêu đề | Số ký tự | Kiểu | Từ khoá chính |`
-Đánh dấu ⭐ phương án đề xuất đăng, 2 phương án còn lại dùng khi A/B test thumbnail không đủ.
+### 1. TIÊU ĐỀ
+`| # | Tiêu đề | Số ký tự | Kiểu | Từ khoá chính |` — đánh dấu ⭐ phương án đăng.
 
-### 2. THUMBNAIL (3 phương án cho A/B test)
-`| # | Chữ trên ảnh (≤ 4 từ) | Mô tả hình & bố cục | Prompt Nano Banana Pro 16:9 (không có chữ trong ảnh) |`
+### 2. THUMBNAIL (3 phương án A/B test)
+`| # | Chữ (≤ 4 từ) | Mô tả hình & bố cục | Prompt Nano Banana Pro 16:9 (không chữ/logo trong ảnh) |`
 
-### 3. MÔ TẢ (dán thẳng vào YouTube)
+### 3. MÔ TẢ (dán thẳng)
 ```
-<2 câu mở chứa từ khoá + lời hứa>
+Disclosure: This video contains affiliate links — we may earn a commission if you sign up, at no extra cost to you. [Kênh A: The presenter is AI-generated; all testing is done by our team.]
+[Kênh B: Not financial advice. Trading forex, CFDs and crypto involves a high risk of losing money. Not available in all countries.]
 
-<1 đoạn 2–3 câu tóm tắt câu chuyện, không spoil twist cuối>
+<2 câu: từ khoá chính + video trả lời câu hỏi gì>
+
+🔗 Links mentioned (prices as of <Month Year>):
+- <Product> — <LINK>
+- <Alternative> — <LINK>
+[As an Amazon Associate I earn from qualifying purchases.]
 
 Chapters:
-0:00 <Hook title>
-<m:ss> <Chương 1>
-...
+0:00 <Hook>
+<m:ss> <...>
 
-Sources & further reading:
+How we tested: <1–2 câu tóm tắt từ ghi chú test>
+Sources:
 - <nguồn 1>
-- ...
 
-Visuals are AI-generated reconstructions for illustration.
-
-#<NicheTag> #<Topic> #<Topic2>
+#<Niche> #<Product> #<Topic>
 ```
 
 ### 4. TAGS
-Một dòng, phân cách dấu phẩy, tổng ≤ 450 ký tự, từ cụ thể → chung.
+1 dòng, phân cách dấu phẩy, ≤ 450 ký tự.
 
 ### 5. BÌNH LUẬN GHIM
-1 câu hỏi mở kích thích thảo luận liên quan twist của video (không xin like/sub).
+1 câu hỏi mở + (nếu có) cập nhật giá có ngày. Kênh B: nhắc lại "Not financial advice".
 
 ### 6. CAPTION SHORT
-Với mỗi short (theo thứ tự trong shorts.csv hoặc danh sách chương):
-`| Short | Tiêu đề YouTube Shorts (≤ 60 ký tự) | Caption TikTok (≤ 150 ký tự + hashtag) | Caption Instagram (≤ 2 câu + hashtag) | Caption Facebook (≤ 2 câu) | Hashtag chung |`
+`| Short | Tiêu đề Shorts (≤ 60) | TikTok (≤ 150 + hashtag) | Instagram (≤ 2 câu + hashtag) | Facebook (≤ 2 câu) | Hashtag |`
+Kênh B: không TikTok; mọi caption có "Not financial advice".
 
-### 7. KIỂM TRA CUỐI (tự đánh dấu)
-- [ ] 3 tiêu đề đều ≤ 60 ký tự (ghi số ký tự thật)
-- [ ] Chapter bắt đầu 0:00, ≥ 3 mục, hoặc đã ghi `[cập nhật sau dựng]`
-- [ ] Có dòng công khai AI + lời nhắc bật nhãn
-- [ ] Không clickbait sai sự thật
+### 7. KIỂM TRA CUỐI
+- [ ] 3 tiêu đề ≤ 60 ký tự (ghi số ký tự thật)
+- [ ] Dòng đầu mô tả là công khai; Kênh B dòng 2 là cảnh báo
+- [ ] Giá có "as of"; Amazon có câu chuẩn, không ghi giá
+- [ ] Chapter 0:00, ≥ 3 mục, hoặc `[cập nhật sau dựng]`
+- [ ] Không clickbait sai sự thật; Kênh B không từ cấm
+- [ ] Đã nhắc bật nhãn AI / paid promotion

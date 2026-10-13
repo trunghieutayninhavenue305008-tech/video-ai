@@ -1,84 +1,75 @@
-# 11 — Tích hợp Claude: "bộ não" của xưởng video
+# 11 — Tích hợp Claude: "bộ não" của xưởng video review
 
-> Claude không chỉ viết kịch bản. Trong quy trình này Claude là **trưởng nhóm nội dung + biên tập viên tiếng Anh bản ngữ + kiểm duyệt viên + kỹ sư tự động hoá**. Con người ra quyết định; Claude làm phần nặng.
+> Claude là **trưởng nhóm nội dung + nhà nghiên cứu sản phẩm + biên tập viên tiếng Anh + kiểm soát tuân thủ + kỹ sư tự động hoá**. Con người chọn, test, duyệt.
 
 ## 1. Claude làm gì ở từng bước
 
-| Bước | Claude làm | Hình thức dùng |
+| Bước | Claude làm | Hình thức |
 |---|---|---|
-| 1. Chủ đề | Đề xuất & chấm điểm chủ đề, tìm nguồn có link (web search) | Claude Project của kênh |
-| 2. Kịch bản | Viết kịch bản module + shot list + prompt ảnh/video + từ điển phát âm | **Skill `kich-ban-video`** |
-| Cổng 1 | Soát sự thật, ngữ pháp, văn phong "AI", rủi ro chính sách, độ độc lập từng chương | **Skill `qc-video`** |
-| 3–5. Giọng/ảnh/clip | Viết prompt chuẩn theo Bible; sửa prompt khi kết quả lỗi ("ảnh này bị lỗi tay, viết lại prompt") | Claude Project |
-| 7. SEO | Tiêu đề, mô tả, chapter, hashtag, bình luận ghim, caption short từng nền tảng, chữ trên thumbnail | **Skill `seo-xuat-ban`** |
-| 8. Cắt short | Đọc phụ đề, chọn 5 đoạn hay nhất, viết tiêu đề/hashtag; ffmpeg cắt tự động | **Claude API** qua `tools/cat_short.py` |
-| 10. Phân tích | Đọc CSV YouTube Studio → báo cáo 5 dòng + 3 việc tuần tới | Claude Project |
-| Bảo trì | Cập nhật Bible, skill, template khi có lỗi lặp lại; sửa tool | **Claude Code** trên repo này |
+| 1. Chọn sản phẩm | Tìm SaaS/AI tool có affiliate, đánh giá nhu cầu, đối thủ; Kênh B: tra giấy phép, chương trình đối tác | **Skill có sẵn của công ty:** `saas-affiliate-research`, `broker-affiliate-research`, `forex-broker` + web search |
+| 2. Test sản phẩm | Lập danh sách cảnh cần quay; (tuỳ chọn) thao tác web app theo kịch bản | Claude Project; **Claude in Chrome** |
+| 3. Kịch bản | Kịch bản module 15–20 phút, vai HOST/VO, shot list, câu công khai, cảnh báo | **Skill `kich-ban-video`** |
+| Cổng 1 | Soát sự thật theo ghi chú test, câu bịa trải nghiệm, disclosure, cảnh báo, ngữ pháp | **Skill `qc-video`** |
+| 6–7. Hình | Prompt người dẫn, cảnh người thật AI, thumbnail theo Bible | Claude Project + [thư viện prompt](../templates/thu-vien-prompt.md) |
+| 9. SEO | Tiêu đề, mô tả (công khai ở dòng đầu), chapter, caption short 4 nền tảng | **Skill `seo-xuat-ban`** |
+| Cắt short | Chọn 5 đoạn hay từ phụ đề, viết caption; ffmpeg cắt tự động | **Claude API** qua `tools/cat_short.py` |
+| Phân tích | YouTube Studio + dashboard affiliate → báo cáo, chọn sản phẩm tuần sau theo chuyển đổi | Claude Project |
+| Bảo trì | Sửa Bible/skill/template khi lỗi lặp lại; cập nhật giá/link video cũ | **Claude Code** trên repo |
 
-## 2. Gói Claude nên dùng
+## 2. Gói Claude
 
 | Gói | Giá | Dùng khi |
 |---|---|---|
 | Pro | US$20/tháng | Tuần chuẩn bị (gói A) |
-| **Max 5x** | **US$100/tháng** | **Gói B** — 1 người, 5 video/tuần, chạy nhiều phiên nghiên cứu + Claude Code |
-| Max 20x | US$200/tháng | Gói C — 2 người/2 kênh |
-| Claude API | Trả theo token | Tool tự động; Opus 5.5 giá US$4 / US$20 mỗi 1 triệu token vào/ra — cắt short cho 1 video tốn vài cent |
+| **Max 5x** | **US$100/tháng** | **Gói B** — nghiên cứu sản phẩm, viết 5 kịch bản/tuần, QC, Claude Code |
+| Max 20x | US$200/tháng | Gói C — 2 người |
+| Claude API | Theo token | Tool cắt short — dưới US$0,10/video (Opus 5.5: US$4 / US$20 mỗi 1 triệu token vào/ra) |
 
-Hạn mức gói Pro/Max tính theo cửa sổ 5 giờ; Max 5x/20x gấp 5/20 lần Pro.
+## 3. Thiết lập 2 Claude Project (làm 1 lần, 20 phút mỗi kênh)
 
-## 3. Thiết lập Claude Project cho kênh (làm 1 lần, 20 phút)
-
-1. claude.ai → **Projects** → **Create project** → tên: `Kênh 1 — [Tên kênh]`.
-2. **Project knowledge** — tải lên:
-   - `templates/kenh-bible.md` (đã điền cho kênh)
-   - `templates/thu-vien-prompt.md`
-   - `templates/checklist-qc.md`
-   - 2–3 kịch bản tốt nhất của kênh (bổ sung dần — Claude học giọng văn từ đây)
-3. **Project instructions** — dán nguyên khối sau:
+1. claude.ai → **Projects** → tạo `Kênh A — [Tên]` và `Kênh B — [Tên]`.
+2. **Project knowledge**: `templates/kenh-bible.md` (bản đã điền cho kênh), `templates/thu-vien-prompt.md`, `templates/checklist-qc.md`, `docs/09-chinh-sach-phap-ly-rui-ro.md`, 2–3 kịch bản tốt nhất (bổ sung dần).
+3. **Project instructions** — dán (sửa phần trong ngoặc):
 
 ```text
-Bạn là trưởng nhóm nội dung của kênh YouTube tiếng Anh "[Tên kênh]" (ngách: Lịch sử & Bí ẩn, khán giả toàn cầu).
-- Luôn tuân thủ Bible kênh trong Project knowledge (giọng văn, phong cách hình, từ cấm, phát âm).
-- Nội dung xuất bản viết bằng tiếng Anh Mỹ tự nhiên; giải thích, ghi chú và câu hỏi cho đội ngũ viết bằng tiếng Việt.
-- Mọi khẳng định sự thật phải có nguồn kiểm chứng được; điều chưa chắc chắn thì nói rõ ("historians believe...").
-- Không tạo nội dung: tài chính/y tế/pháp lý dưới dạng nhân vật chuyên gia AI; tin tức nóng; deepfake người thật; nội dung thao túng cảm xúc.
-- Khi viết kịch bản, dùng skill kich-ban-video; khi soát lỗi dùng qc-video; khi làm tiêu đề/mô tả dùng seo-xuat-ban.
-- Nếu yêu cầu mơ hồ, chọn phương án hợp lý nhất theo Bible và ghi rõ giả định thay vì hỏi lại.
+Bạn là trưởng nhóm nội dung của kênh YouTube tiếng Anh "[Tên kênh]" — review [SaaS, AI tool, sản phẩm công nghệ | sàn crypto và broker forex], khán giả toàn cầu.
+- Tuân thủ Bible kênh trong Project knowledge: giọng văn, người dẫn, phong cách hình, câu công khai, từ cấm, phát âm.
+- Nội dung xuất bản viết tiếng Anh Mỹ; giải thích và ghi chú cho đội ngũ viết tiếng Việt.
+- Chỉ khẳng định những gì có trong ghi chú test của đội hoặc nguồn chính thức (kèm link, ngày). Không bao giờ bịa trải nghiệm, lời chứng thực hay số liệu.
+- Luôn có công khai affiliate ở 30 giây đầu và dòng đầu mô tả.
+- [Chỉ Kênh B] Không có người dẫn AI; không đưa lời khuyên đầu tư; không hứa lợi nhuận; luôn có cảnh báo rủi ro; chỉ sàn/broker có giấy phép cấp 1.
+- Dùng skill kich-ban-video để viết kịch bản, qc-video để soát, seo-xuat-ban cho tiêu đề/mô tả.
+- Nếu yêu cầu mơ hồ, chọn phương án hợp lý theo Bible và ghi giả định thay vì hỏi lại.
 ```
 
-## 4. Cài 3 skill của repo
+## 4. Cài skill
 
-Skill là "quy trình đóng gói" — Claude tự áp dụng đúng khuôn mỗi lần, nên đầu ra **không lệch giữa các video** (đây là cách chặn lỗi lặt vặt ở gốc).
-
-| Skill | Thư mục | Đầu ra |
+| Skill | Nguồn | Đầu ra |
 |---|---|---|
-| `kich-ban-video` | [.claude/skills/kich-ban-video](../.claude/skills/kich-ban-video/SKILL.md) | Kịch bản module, shot list CSV, prompt ảnh/video, từ điển phát âm, 5 chương làm short |
-| `qc-video` | [.claude/skills/qc-video](../.claude/skills/qc-video/SKILL.md) | Bảng lỗi theo mã + bản sửa đề xuất + kết luận Đạt/Không đạt |
-| `seo-xuat-ban` | [.claude/skills/seo-xuat-ban](../.claude/skills/seo-xuat-ban/SKILL.md) | 3 tiêu đề, mô tả có chapter, tag, chữ thumbnail, caption short 4 nền tảng |
+| `kich-ban-video` | Repo — [.claude/skills/kich-ban-video](../.claude/skills/kich-ban-video/SKILL.md) | Kịch bản review module, bản đọc HOST/VO, shot list CSV, prompt, công khai, nguồn |
+| `qc-video` | Repo — [.claude/skills/qc-video](../.claude/skills/qc-video/SKILL.md) | Bảng lỗi theo mã (gồm mã tuân thủ C1–C8), Đạt/Không đạt, đề xuất sửa gốc |
+| `seo-xuat-ban` | Repo — [.claude/skills/seo-xuat-ban](../.claude/skills/seo-xuat-ban/SKILL.md) | Tiêu đề, mô tả có công khai, chapter, thumbnail, caption short |
+| `saas-affiliate-research` | **Đã có** trong tài khoản Claude của công ty | Danh sách SaaS/AI tool có affiliate + phân tích |
+| `broker-affiliate-research`, `forex-broker` | **Đã có** trong tài khoản Claude của công ty | Sàn/broker có affiliate, giấy phép, so sánh |
 
-**Cài trên claude.ai:** nén từng thư mục skill thành file `.zip` (ví dụ `kich-ban-video.zip` chứa thư mục `kich-ban-video/` có `SKILL.md`) → **Settings → Capabilities → Skills → Upload skill**.
+**Cài 3 skill của repo lên claude.ai:** nén từng thư mục (ví dụ `kich-ban-video/` chứa `SKILL.md`) thành `.zip` → **Settings → Capabilities → Skills → Upload skill**. **Với Claude Code:** chạy `claude` trong thư mục repo — skill trong `.claude/skills/` tự được nạp.
 
-**Dùng với Claude Code:** mở terminal trong thư mục repo, chạy `claude` — các skill trong `.claude/skills/` tự được nạp.
+## 5. Claude Code & Claude in Chrome — tự động hoá không cần biết lập trình
 
-## 5. Claude Code — tự động hoá không cần biết lập trình
+Ví dụ câu lệnh tiếng Việt:
+- *"Chạy tools/cat_short.py cho video V012, chế độ blur, thêm dòng 'Not financial advice · Capital at risk', rồi mở shorts.csv."*
+- *"Đọc file analytics và báo cáo affiliate tuần này trong thư mục bao-cao/, viết báo cáo 5 dòng theo docs/10."*
+- *"Giá gói Pro của [sản phẩm] vừa đổi — tìm các video có nhắc giá cũ trong thư mục VIDEO và soạn bình luận ghim cập nhật."*
+- (Claude in Chrome) *"Mở [web app], làm theo danh sách cảnh trong brief V015, dừng 3 giây ở mỗi màn hình"* — trong khi OBS ghi hình.
 
-Claude Code chạy trên máy (hoặc trên web claude.ai/code) và làm việc trực tiếp với file trong repo/Drive. Ví dụ câu lệnh có thể gõ bằng tiếng Việt:
+## 6. Tool `cat_short.py`
 
-- *"Chạy tools/cat_short.py cho video V007, chế độ blur, rồi mở shorts.csv cho tôi xem."*
-- *"Đọc file analytics tuần này trong thư mục bao-cao/, so với 3 tuần trước, viết báo cáo 5 dòng theo mẫu ở docs/10."*
-- *"Tuần này có 3 lỗi phụ đề ngắt dòng xấu. Sửa skill kich-ban-video và Bible để tránh lỗi này."*
-- *"Tạo shot list cho 5 kịch bản trong thư mục tuần 45, xuất thành 5 file CSV."*
-
-## 6. Tool `cat_short.py` (Claude API + ffmpeg)
-
-Đầu vào: video dài + phụ đề SRT. Claude chọn 5 đoạn 20–90 giây đứng độc lập được, có câu mở mạnh và câu kết chốt → ffmpeg cắt sang 9:16 (cắt giữa hoặc nền mờ) + cháy phụ đề + xuất `shorts.csv` (tiêu đề, mô tả, hashtag từng nền tảng). Chi tiết cài đặt và cách chạy: [tools/README.md](../tools/README.md).
-
-Chi phí: 1 video 10 phút ≈ 2.500 từ phụ đề ≈ vài nghìn token → **dưới US$0,10/video** với Opus 5.5.
+Đầu vào: video dài + SRT. Claude chọn 5 đoạn 20–90 giây đứng độc lập; ffmpeg cắt 9:16 (`crop` cho đoạn người dẫn, `blur` cho đoạn màn hình), cháy phụ đề, `--note` thêm dòng cảnh báo cố định (Kênh B), xuất `shorts.csv` caption từng nền tảng. Chi tiết: [tools/README.md](../tools/README.md).
 
 ## 7. Nguyên tắc dùng Claude để ít phải sửa
 
-1. **Đưa đủ ngữ cảnh 1 lần** (Bible + brief) thay vì sửa qua lại nhiều lượt.
-2. **Yêu cầu đầu ra có cấu trúc** (bảng, CSV) — skill đã làm sẵn.
-3. **Bắt Claude tự soát trước khi đưa** — skill `qc-video` chạy trước khi người duyệt.
-4. **Sửa ở gốc**: lỗi lặp lại → sửa skill/Bible, không sửa tay từng video.
-5. **Không dán mật khẩu, API key, thông tin thẻ vào chat.** API key để trong biến môi trường `ANTHROPIC_API_KEY`.
+1. Đưa đủ ngữ cảnh 1 lần: Bible + brief + **ghi chú test**.
+2. Yêu cầu đầu ra có cấu trúc (skill đã làm sẵn).
+3. Cho Claude tự soát (`qc-video`) trước khi người duyệt.
+4. Lỗi lặp lại → sửa skill/Bible, không sửa tay từng video.
+5. Không dán mật khẩu, API key, thông tin thẻ, link affiliate có mã bí mật vào chat công khai.

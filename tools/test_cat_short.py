@@ -112,6 +112,20 @@ class SubtitleTests(unittest.TestCase):
         self.assertTrue(all("God himself" not in ln for ln in dialogues))  # cue 2 nằm ngoài đoạn
 
 
+    def test_write_ass_note_only(self):
+        with tempfile.TemporaryDirectory() as d:
+            cues = cs.parse_srt(write_srt(Path(d)))
+            path = Path(d) / "n.ass"
+            cs.write_ass(path, cues, 15.0, 30.0, "Arial", 78, 4,
+                         note="Not financial advice · Capital at risk", burn_subs=False)
+            text = path.read_text(encoding="utf-8")
+        dialogues = [ln for ln in text.splitlines() if ln.startswith("Dialogue:")]
+        self.assertEqual(len(dialogues), 1)
+        self.assertIn(",Note,", dialogues[0])
+        self.assertIn("0:00:15.00", dialogues[0])
+        self.assertIn("Capital at risk", dialogues[0])
+
+
 class ClaudeRequestTests(unittest.TestCase):
     def test_ask_claude_request_and_parse(self):
         captured = {}
@@ -131,6 +145,7 @@ class ClaudeRequestTests(unittest.TestCase):
         self.assertEqual(captured["betas"], ["server-side-fallback-2026-07-01"])
         self.assertEqual(captured["output_config"]["format"]["type"], "json_schema")
         self.assertIn("#1 [00:00:00.000 -> 00:00:04.000] Hello world.", captured["messages"][0]["content"])
+        self.assertIn("review channel", captured["system"])
 
     def test_refusal_raises(self):
         fake = SimpleNamespace(beta=SimpleNamespace(messages=SimpleNamespace(
@@ -153,7 +168,8 @@ class RenderTests(unittest.TestCase):
             plan.write_text(json.dumps({"clips": [clip(1, 4, "Ubar found"), clip(5, 7, "Sinkhole")]}), encoding="utf-8")
             out = d / "out"
             for mode in ("crop", "blur"):
-                rc = cs.main([str(video), str(srt), "--out", str(out / mode), "--plan", str(plan), "--mode", mode])
+                extra = ["--note", "Not financial advice · Capital at risk"] if mode == "blur" else []
+                rc = cs.main([str(video), str(srt), "--out", str(out / mode), "--plan", str(plan), "--mode", mode] + extra)
                 self.assertEqual(rc, 0)
                 info = json.loads(subprocess.run(
                     ["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,width,height:format=duration",
