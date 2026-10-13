@@ -57,10 +57,10 @@
 |---|---|---|---|
 | **T5 15/10** | Mở tài khoản gói A ([checklist](05-bo-cong-cu.md#6-checklist-mở-tài-khoản-ngày-1-sau-review)); Claude Project + cài skill; **gửi hồ sơ luật sư Kênh B**; Claude đề xuất tên 2 kênh + 3 phương án nhân vật người dẫn | Tài khoản; hồ sơ luật sư đã gửi | Vận hành |
 | | Sếp chọn tên kênh & người dẫn | Quyết định | Sếp |
-| **T6 16/10** | Tạo người dẫn AI (Nano Banana Pro → HeyGen), chọn giọng ElevenLabs; **Bible Kênh A v1**; Claude (skill `saas-affiliate-research`) chọn 10 sản phẩm đầu → **nộp đơn affiliate** | Avatar ID, Voice ID, Bible, 10 đơn affiliate | Vận hành |
-| **T2 19/10** | Template CapCut (phần tính năng, bảng giá, so sánh, kết luận); test & quay màn hình sản phẩm #1; **video thử #1** (bấm giờ từng bước) | Template; video #1 | Vận hành |
-| **T3 20/10** | **Video thử #2**; cắt 5 short bằng `cat_short.py` | Video #2; short | Vận hành |
-| **T4 21/10** | **Sếp duyệt Cổng 2** cho 2 video thử (15 phút) → sửa gốc → nâng gói B → hẹn giờ video #1 | Quyết định Go | Sếp + vận hành |
+| **T6 16/10** | Tạo người dẫn AI (Nano Banana Pro → HeyGen; nếu gói Creator không có Video Agent hoặc thiếu credit → nâng Pro 1.000 credit, +US$20), chọn giọng ElevenLabs; **Bible Kênh A v1**; Claude (skill `saas-affiliate-research`) chọn 10 sản phẩm đầu → **nộp đơn affiliate** | Avatar ID, Voice ID, Bible, 10 đơn affiliate | Vận hành |
+| **T2 19/10** | Template CapCut (phần tính năng, bảng giá, so sánh, kết luận); test & quay màn hình sản phẩm #1; **video thử #1** theo quy trình hiện tại (bấm giờ từng bước) | Template; video #1 | Vận hành |
+| **T3 20/10** | **Video thử #2 bằng HeyGen Video Agent + trình dựng** (ghi credit trước/sau, bấm giờ bước 5–8 — [05 mục 7](05-bo-cong-cu.md#7-phương-án-thay-thế-heygen-video-agent--trình-dựng-q9--thử-ab-ngày-2010)); cắt 5 short bằng `cat_short.py` | Video #2; số credit & phút thật; short | Vận hành |
+| **T4 21/10** | **Sếp duyệt Cổng 2** cho 2 video thử (15 phút), so sánh A/B → **chốt Q9** → sửa gốc → nâng gói B → hẹn giờ video #1 | Quyết định Go + Q9 | Sếp + vận hành |
 | **T5 22/10** | 🚀 **Ra mắt Kênh A**: video #1 lúc 02:00 + 2 short | Kênh A công khai | Vận hành |
 | **T2 26/10** | Báo cáo tuần đầu (5 dòng + KPI + trạng thái affiliate + tiến độ luật sư) | Báo cáo | Vận hành |
 

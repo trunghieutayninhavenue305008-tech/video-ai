@@ -49,7 +49,7 @@ Gói Google AI: Pro US$19,99 (1.000 credit + 50/ngày) · Ultra 5x US$99,99 (10.
 |---|---|
 | OpenAI Sora | Đã thông báo khai tử (24/03/2026) |
 | Runway Gen-4.5 | ~12 credit/giây → đắt hơn Veo qua Flow cho cùng sản lượng |
-| Tool "video từ chữ" dùng stock (InVideo, Pictory…) | Ra video rập khuôn — đúng loại YouTube không trả tiền |
+| Tool "video từ chữ" dùng stock (InVideo, Pictory…) | Ra video rập khuôn — đúng loại YouTube không trả tiền (HeyGen Video Agent cũng dùng cảnh kho → chỉ **thử nghiệm**, xem mục 7) |
 | Deepfake/clone người thật không có hợp đồng | Vi phạm chính sách YouTube, luật quảng cáo, Luật Trí tuệ nhân tạo VN |
 | Tài khoản chia sẻ/crack | Mất tài khoản, không quyền thương mại, rủi ro bảo mật |
 | Gói miễn phí (HeyGen Free, ElevenLabs Free, Suno Free…) | Watermark và/hoặc không có quyền thương mại |
@@ -78,3 +78,40 @@ Gói Google AI: Pro US$19,99 (1.000 credit + 50/ngày) · Ultra 5x US$99,99 (10.
 - [ ] **Đăng ký chương trình affiliate** cho 10 sản phẩm đầu tiên (duyệt mất vài ngày–vài tuần); Amazon Associates (cần 3 đơn trong 180 ngày).
 - [ ] Gửi **hồ sơ hỏi ý kiến luật sư** cho Kênh B (mẫu câu hỏi ở [09](09-chinh-sach-phap-ly-rui-ro.md#6-hồ-sơ-hỏi-ý-kiến-luật-sư-cho-kênh-b)).
 - [ ] Trang trung gian/link rút gọn có thương hiệu trên website công ty (lọc quốc gia cho Kênh B).
+
+## 7. Phương án thay thế: HeyGen Video Agent + trình dựng (Q9 — thử A/B ngày 20/10)
+
+**Là gì:** đưa kịch bản Claude viết vào **Video Agent** → HeyGen tự tạo bản nháp gồm người dẫn, giọng, B-roll và phụ đề → mở **trình dựng (AI Studio)** của HeyGen để chèn quay màn hình, bảng giá, sửa cảnh → xuất. Một công cụ thay cho bước 5–8 (ElevenLabs → HeyGen → Veo → CapCut).
+
+**Không thay được:** bước 1–4 (nghiên cứu, **test & quay màn hình thật**, kịch bản, Cổng 1) và bước 9–10 (thumbnail/SEO, Cổng 2). FTC vẫn bắt buộc review dựa trên trải nghiệm thật.
+
+| Thông tin | Giá trị | Nguồn |
+|---|---|---|
+| Credit / phút Video Agent | **20** (eesel.ai) hoặc **40** (diyai.io, 04/09/2026); tuỳ chọn Seedance 120 | ⚠️ HeyGen không công bố số theo phút; Help Center chỉ xếp Video Agent vào nhóm "tốn nhiều credit" |
+| Phần bị tính credit | ⚠️ Chưa rõ đoạn quay màn hình tải lên có bị tính không → bảng tính giả định **tính cả video** | — |
+| Sửa rồi xuất lại | Tốn credit lần nữa → hệ số **1,3** | diyai.io; ô ThongSo!B53 |
+| Video tối đa | 30 phút (Creator/Pro) | heygen.com/pricing |
+| Credit thừa | Gói tháng chuyển sang được **1 kỳ** | HeyGen Help Center |
+| Gói có Video Agent | Help Center ghi rõ ở Pro; Creator chưa ghi rõ ⚠️ | HeyGen Help Center |
+
+**Chi phí & hiệu suất** (sheet **ChiPhiVideo** mục E, **NangSuat** mục so sánh — Kênh A, gói B, 12 video/tháng):
+
+| | Hiện tại | HeyGen @20 credit/phút | HeyGen @40 credit/phút |
+|---|---|---|---|
+| Credit HeyGen / video | 94 | 468 | 936 |
+| Chi phí biến đổi / video 18 phút | US$15,19 ≈ 403 nghìn ₫ | US$22,93 ≈ 608 nghìn ₫ | US$45,86 ≈ 1,22 triệu ₫ |
+| Tiền HeyGen / tháng | US$74 | ~US$275 | ~US$550 |
+| Gói B / tháng | ~20,2 triệu ₫ | ~26,0 triệu ₫ | ~34,1 triệu ₫ |
+| Phút / video (tháng đầu → thành thạo) | 420 → 234 | 330 → 187 | 330 → 187 |
+| Video dài / ngày / người (thành thạo) | 1,6 | 2,0 | 2,0 |
+
+**Đánh giá:** nhanh hơn ~20% nhưng đắt hơn 1,5–3 lần. Khi chạy cả 2 kênh, mỗi giờ tiết kiệm tốn 0,57–1,34 triệu ₫ — gấp 6–14 lần chi phí nhân sự/giờ (~97 nghìn ₫, giả định lương 15 triệu). **Nếu Kênh B không mở**, hạ được Flow Ultra → AI Pro và ElevenLabs Pro → Creator (−US$257/tháng) → chênh lệch ròng chỉ **−1,5 đến +5,8 triệu ₫/tháng** — khi đó đáng cân nhắc.
+
+**Điểm yếu cần đo trong video thử:** B-roll lấy từ kho dễ rập khuôn (rủi ro "inauthentic content"); zoom/khoanh vùng màn hình trong trình dựng có thể kém CapCut; phụ thuộc 1 nhà cung cấp. **Không dùng cho Kênh B** (không người dẫn AI).
+
+**Cách thử A/B (19–20/10):**
+1. Ngày 16/10, nếu gói Creator không có Video Agent hoặc không đủ credit (1 video 18 phút cần 468–936 credit), nâng HeyGen lên **Pro 1.000 credit (US$49, thêm US$20 ngoài gói A)** cho tuần thử.
+2. Video thử #1 (19/10): quy trình hiện tại. Video thử #2 (20/10): Video Agent + trình dựng, cùng dạng sản phẩm.
+3. Ghi lại cho mỗi video: **phút thao tác bước 5–8**, **credit trước/sau** (trang Usage của HeyGen), số lỗi ở Cổng 2.
+4. Ngày 21/10 sếp xem 2 video, chốt Q9. **Đổi sang HeyGen nếu:** đạt Cổng 2 ngang video #1 **và** chi phí tăng ròng ≤ giá trị giờ công tiết kiệm (~0,9 triệu ₫/tháng = 9,4 giờ × ~97 nghìn ₫). Nhập credit/phút thật vào ô ThongSo!B50–B51 để bảng tính tự tính lại.
+

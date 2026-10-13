@@ -115,3 +115,24 @@ Ví dụ thận trọng 3 tháng đầu — 2.000 lượt xem/video: doanh thu ~
 | Gói Ultra chưa mở tại VN | AI Pro + Kling Pro + Seedance |
 | Tốn tiền test sản phẩm | Ưu tiên bản dùng thử, tài khoản review do hãng cấp; hủy gói sau khi quay |
 | Video 15+ phút tốn thời gian dựng | Template CapCut cho từng loại phần (tính năng, giá, so sánh) |
+
+## 7. Phương án HeyGen Video Agent + trình dựng (chỉ Kênh A, Q9)
+
+Sheet **ChiPhiVideo** mục E. Giả định: Video Agent tính credit trên **cả video 18 phút** × 1,3 lần xuất lại; không dùng Veo và ElevenLabs cho Kênh A. Credit/phút có 2 mức vì nguồn lệch nhau (20 theo eesel.ai, 40 theo diyai.io; HeyGen không công bố) ⚠️.
+
+| Chỉ tiêu (gói B, 12 video Kênh A/tháng) | Hiện tại | HeyGen @20 | HeyGen @40 |
+|---|---|---|---|
+| Credit HeyGen / video | 94 | 468 | 936 |
+| Chi phí biến đổi / video | US$15,19 (403 nghìn ₫) | US$22,93 (608 nghìn ₫) | US$45,86 (1,22 triệu ₫) |
+| Gấp bao nhiêu lần hiện tại | 1,0x | 1,5x | 3,0x |
+| Credit HeyGen cần / tháng | 1.123 | 5.616 | 11.232 |
+| Tiền HeyGen / tháng | US$74 | ~US$275 | ~US$550 |
+| **Tăng thêm / tháng** | — | **+5,3 triệu ₫** | **+12,6 triệu ₫** |
+| Gói B / tháng (gồm 10% dự phòng phần tăng) | ~20,2 triệu ₫ | ~26,0 triệu ₫ | ~34,1 triệu ₫ |
+| Nếu Kênh B không mở: cắt Flow Ultra → Pro, ElevenLabs Pro → Creator | — | −US$257 | −US$257 |
+| **Chênh lệch ròng nếu Kênh B không mở** | — | **−1,5 triệu ₫** (rẻ hơn) | **+5,8 triệu ₫** |
+
+Tiền HeyGen tính tuyến tính theo US$49/1.000 credit — gói Pro có nhiều bậc credit, chọn bậc gần nhất phía trên khi mua. Khi Kênh B không mở mà vẫn làm short native, short phải làm bằng HeyGen hoặc giảm số lượng vì AI Pro chỉ có ~2.500 credit Flow ⚠️.
+
+**Kết luận:** chạy cả 2 kênh thì **chưa đáng đổi** (mỗi giờ tiết kiệm tốn 0,57–1,34 triệu ₫). Kênh B không mở và credit thật gần 20/phút thì **đáng đổi**. Quyết định sau video thử #2 (20/10) — cách thử ở [05 mục 7](05-bo-cong-cu.md#7-phương-án-thay-thế-heygen-video-agent--trình-dựng-q9--thử-ab-ngày-2010).
+

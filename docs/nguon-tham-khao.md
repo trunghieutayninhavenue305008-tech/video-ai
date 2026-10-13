@@ -31,6 +31,9 @@
 - eesel.ai — HeyGen pricing 2026 (credit/phút Avatar IV): https://www.eesel.ai/blog/heygen-pricing
 - Luma AI — HeyGen pricing 2026: https://lumalabs.ai/news/heygen-pricing
 - Dupple — Best AI avatar generators 2026 (HeyGen, Synthesia, Hedra, Captions): https://dupple.com/learn/best-ai-avatar-generators
+- HeyGen Help Center — Credit-based pricing explained (Video Agent thuộc nhóm tốn nhiều credit; credit chuyển 1 kỳ): https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-explained
+- diyai.io (04/09/2026) — HeyGen pricing (Video Agent 40 credit/phút, Seedance 120; Avatar IV 16–31): https://diyai.io/ai-tools/video-generation/heygen-pricing/
+- eesel.ai — HeyGen pricing 2026 (Video Agent 20 credit/phút): https://eesel.ai/blog/heygen-pricing
 - diyai.io (20/09/2026) — Google Veo pricing: Flow credits & API: https://diyai.io/ai-tools/video-generation/google-veo-pricing/
 - Google Blog — Veo 3.1 Ingredients to Video: https://blog.google/innovation-and-ai/technology/ai/veo-3-1-ingredients-to-video/
 - AI Weekly — Google AI Ultra tiers at I/O 2026: https://aiweekly.co/alerts/google-adds-100month-ai-ultra-tier-at-io-2026

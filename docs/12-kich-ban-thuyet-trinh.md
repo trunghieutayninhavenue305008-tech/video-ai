@@ -2,7 +2,7 @@
 
 > Thời lượng: **~20 phút trình bày + 15 phút hỏi đáp.** Mỗi slide có "câu chốt" — quên hết thì chỉ cần nói câu chốt.
 >
-> Slide: https://claude.ai/artifact/DAKFJctqG54oiPtmcoXjRc (19 trang, đúng thứ tự bảng ở mục 2; lời dẫn nằm trong ghi chú của từng slide).
+> Slide: https://claude.ai/artifact/DAKFJctqG54oiPtmcoXjRc (21 trang, đúng thứ tự bảng ở mục 2; lời dẫn nằm trong ghi chú của từng slide).
 
 ## 1. 12 con số phải thuộc lòng
 
@@ -38,14 +38,16 @@
 | 11 | Ngân sách | ~1 triệu ₫ cho 1 video dài 18 phút kèm 5 short |
 | 12 | Doanh thu & hoà vốn | ~1.570 lượt xem/video là hoà vốn công cụ |
 | 13 | Năng suất & lịch đăng | 1 video dài + 6 short/ngày; hẹn giờ theo giờ Mỹ |
-| 14 | Chống lỗi lặt vặt | Mỗi lỗi chỉ được xảy ra 1 lần; lỗi tuân thủ không có ngoại lệ |
-| 15 | Chính sách YouTube & FTC | Công khai 3 lớp, chỉ nói điều đã test |
-| 16 | Kênh B & pháp luật | Kênh B chuẩn bị song song, chỉ đăng khi luật sư đồng ý |
-| 17 | Lộ trình 90 ngày | Có điểm dừng rõ ràng ngày 30 và 60 |
-| 18 | 7 ngày tới | Duyệt hôm nay — thứ Năm tuần sau có video đầu tiên |
-| 19 | 8 quyết định | — |
+| 14 | HeyGen Video Agent: cách làm | Một công cụ gộp 4 bước giọng–người dẫn–B-roll–dựng, nhưng không test thay mình |
+| 15 | HeyGen Video Agent: chi phí & hiệu suất | Nhanh hơn ~20%, đắt hơn 1,5–3 lần → thử ở video #2 rồi chốt Q9 |
+| 16 | Chống lỗi lặt vặt | Mỗi lỗi chỉ được xảy ra 1 lần; lỗi tuân thủ không có ngoại lệ |
+| 17 | Chính sách YouTube & FTC | Công khai 3 lớp, chỉ nói điều đã test |
+| 18 | Kênh B & pháp luật | Kênh B chuẩn bị song song, chỉ đăng khi luật sư đồng ý |
+| 19 | Lộ trình 90 ngày | Có điểm dừng rõ ràng ngày 30 và 60 |
+| 20 | 7 ngày tới | Duyệt hôm nay — thứ Năm tuần sau có video đầu tiên |
+| 21 | 9 quyết định | — |
 
-## 3. Chuẩn bị hỏi đáp (18 câu)
+## 3. Chuẩn bị hỏi đáp (19 câu)
 
 **1. "Sao phải tách 2 kênh? Một kênh cho tiện."**
 Chính sách YouTube: kênh dùng nhân vật AI đưa hướng dẫn tài chính/đầu tư thì **cả kênh** không được kiếm tiền. Tách ra để Kênh A (SaaS, AI tool, SPVL) được dùng người dẫn AI an toàn; Kênh B (tài chính) không dùng người dẫn AI. Khán giả hai nhóm cũng khác nhau.
@@ -96,9 +98,12 @@ Làm trang trung gian chứa link affiliate + bài viết chi tiết (tăng chuy
 
 **18. "Mở rộng thế nào?"** — Gói C: người thứ 2, Kênh B đầy đủ (nếu được), lồng tiếng đa ngôn ngữ Kênh A.
 
+**19. "Có tool nào vừa tạo người vừa tự dựng hết không?"**
+Có: HeyGen Video Agent + trình dựng (slide 14–15). Nhanh hơn ~20% (234 → ~187 phút/video) nhưng đắt hơn 1,5–3 lần: gói B lên ~26–34 triệu ₫/tháng. Vẫn phải tự test và quay màn hình. Nếu Kênh B không mở thì chênh chỉ −1,5 đến +5,8 triệu ₫/tháng. Em thử ở video #2 ngày 20/10 rồi chốt Q9.
+
 ## 4. Mẹo trình bày
 
 - Mở bằng **slide 2**, không mở bằng công cụ.
 - Khi bị hỏi số: mở [bảng tính](../ke-hoach/bang-tinh-ngan-sach-va-van-hanh.xlsx), đổi giả định ngay (lượt xem, CTR link, số video Kênh B = 0) để sếp thấy mô hình phản ứng.
 - Nói thẳng rủi ro Kênh B — đây là điểm sếp đánh giá sự chín chắn của kế hoạch.
-- Kết thúc bằng **slide 19**: chốt từng quyết định, ghi lại ngay.
+- Kết thúc bằng **slide 21**: chốt từng quyết định, ghi lại ngay.

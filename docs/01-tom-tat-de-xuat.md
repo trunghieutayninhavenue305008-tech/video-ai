@@ -12,7 +12,7 @@
 | 4 | Độ dài | Video dài **tối thiểu 15 phút**, chuẩn 15–20, tối đa 25 (bài so sánh). Short 20–90 giây | [03](03-dinh-dang-do-dai.md) |
 | 5 | Mô hình | Làm video dài trước → **cắt 5 short** + 1 short riêng; kịch bản review chia **phần độc lập** (tính năng, giá, so sánh, kết luận) | [03](03-dinh-dang-do-dai.md) |
 | 6 | Doanh thu | **Affiliate có tiền từ video đầu tiên** (SaaS 20–50% định kỳ, forex CPA US$200–1.200, crypto 20–50% phí) + quảng cáo YouTube sau khi vào YPP | [06](06-ngan-sach.md) |
-| 7 | Công cụ | **Claude** · Veo 3.1 · Nano Banana Pro · **HeyGen** (người dẫn) · ElevenLabs · CapCut Pro · OBS (quay màn hình) · tool cắt short | [05](05-bo-cong-cu.md) |
+| 7 | Công cụ | **Claude** · Veo 3.1 · Nano Banana Pro · **HeyGen** (người dẫn) · ElevenLabs · CapCut Pro · OBS (quay màn hình) · tool cắt short. Phương án gộp: HeyGen Video Agent + trình dựng — thử A/B 20/10 (Q9) | [05](05-bo-cong-cu.md) |
 | 8 | Ngân sách | Gói đề xuất **B: ~US$761 ≈ 20,2 triệu ₫/tháng** → **~1,01 triệu ₫ cho 1 video dài 18 phút kèm 5 short** | [06](06-ngan-sach.md) |
 | 9 | Năng suất (1 người) | Tối thiểu 2–3 video dài/tuần · **chuẩn 1 video dài + 6 short/ngày** · tối đa 1,5 video dài/ngày | [07](07-nang-suat-lich-dang.md) |
 | 10 | Điều kiện Kênh B | **Chỉ đăng khi có ý kiến luật sư** (Nghị định 284/2026 phạt tổ chức quảng cáo dịch vụ tài sản mã hoá chưa cấp phép 180–200 triệu ₫; Việt Nam chưa cấp phép sàn forex) | [09](09-chinh-sach-phap-ly-rui-ro.md) |
@@ -52,5 +52,6 @@
 | Q6 | Mục tiêu 90 ngày | Kênh A đạt YPP trước 31/01/2027; affiliate có doanh thu từ tháng 1 | Chỉ đặt mục tiêu sản lượng |
 | Q7 | Ngân sách test | US$150/tháng mua gói SaaS/AI tool + vốn nạp thử sàn ~US$1.000 (thu hồi được, khi Kênh B mở) | Chỉ dùng bản dùng thử miễn phí |
 | Q8 | Nhận diện | Claude đề xuất tên 2 kênh + nhân vật người dẫn; sếp chọn. Liên kết website review của công ty (nếu có) | Sếp tự đặt |
+| Q9 | Cách dựng video Kênh A | Giữ quy trình hiện tại (ElevenLabs → HeyGen → Veo → CapCut); **video thử #2 (20/10) làm bằng HeyGen Video Agent + trình dựng** để đo credit & thời gian thật, chốt 21/10 ([05 mục 7](05-bo-cong-cu.md#7-phương-án-thay-thế-heygen-video-agent--trình-dựng-q9--thử-ab-ngày-2010)) | Đổi hẳn sang HeyGen Video Agent: nhanh hơn ~20%, gói B thành ~26–34 triệu ₫/tháng |
 
 > Sau khi chốt, chạy **Kế hoạch 7 ngày** ở [10-kpi-lo-trinh.md](10-kpi-lo-trinh.md) từ ngày 15/10.

@@ -34,6 +34,20 @@ Năng lực trần: 420 ÷ (234 + 25) = **~1,6 video dài/ngày** khi thành th�
 
 Video review cần thêm thời gian **bảo trì**: cập nhật bình luận ghim khi giá sản phẩm đổi, thay link affiliate hết hạn — đây là lý do giữ ~30% thời gian dự phòng ở mức Tiêu chuẩn.
 
+### So sánh: HeyGen Video Agent + trình dựng (Kênh A, sheet NangSuat)
+
+| Hạng mục | Hiện tại · tháng đầu | Hiện tại · thành thạo | HeyGen · tháng đầu | HeyGen · thành thạo |
+|---|---|---|---|---|
+| Bước 1–4 (nghiên cứu, test & quay màn hình, kịch bản, Cổng 1) | 170 | 100 | 170 | 100 |
+| Bước 5–8 (giọng, người dẫn, B-roll, dựng) | 200 | 107 | **110** ⚠️ | **60** ⚠️ |
+| Bước 9–10 (thumbnail/SEO, Cổng 2) | 50 | 27 | 50 | 27 |
+| **Tổng phút / video** | **420** | **234** | **330** | **187** |
+| Video dài / ngày / người (kèm cắt short) | 0,9 | 1,6 | 1,1 | 2,0 |
+
+⚠️ Phút bước 5–8 của HeyGen là **ước tính** — bấm giờ thật ở video thử #2 (20/10) rồi nhập vào ô NangSuat!E41:F41.
+
+Tiết kiệm ~20% (90 phút/video tháng đầu, 47 phút khi thành thạo) ≈ **9,4 giờ/tháng** ở gói B. Kênh A vẫn giữ nhịp ~3 video/tuần, nên thời gian dư dùng để test sản phẩm kỹ hơn hoặc làm kho Kênh B, không phải để đăng nhiều hơn. Chi phí tiền ở [06 mục 7](06-ngan-sach.md#7-phương-án-heygen-video-agent--trình-dựng-chỉ-kênh-a-q9).
+
 ## 3. Trần đăng mỗi kênh
 
 | Nền tảng | Loại | Tối thiểu | Tối đa | Gói B thực tế |

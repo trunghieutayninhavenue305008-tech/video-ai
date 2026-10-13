@@ -22,7 +22,7 @@ Bộ hồ sơ đầy đủ để **review thứ Tư 14/10/2026** và **bắt tay
 
 👉 Đọc trước:
 - [docs/01-tom-tat-de-xuat.md](docs/01-tom-tat-de-xuat.md): tóm tắt, đọc trong 3 phút.
-- [docs/12-kich-ban-thuyet-trinh.md](docs/12-kich-ban-thuyet-trinh.md): lời dẫn từng slide và 18 câu hỏi đáp.
+- [docs/12-kich-ban-thuyet-trinh.md](docs/12-kich-ban-thuyet-trinh.md): lời dẫn từng slide (21 trang) và 19 câu hỏi đáp.
 - [docs/09-chinh-sach-phap-ly-rui-ro.md](docs/09-chinh-sach-phap-ly-rui-ro.md): vì sao tách 2 kênh và điều kiện mở Kênh B.
 
 🎞️ **Slide thuyết trình (có ghi chú lời dẫn):** https://claude.ai/artifact/DAKFJctqG54oiPtmcoXjRc
@@ -38,7 +38,7 @@ Bộ hồ sơ đầy đủ để **review thứ Tư 14/10/2026** và **bắt tay
 | 02 | [Thị trường, ngách, cấu trúc kênh](docs/02-thi-truong-ngach-nen-tang.md) | 5 mảng nội dung, vì sao 2 kênh, nền tảng nào làm gì |
 | 03 | [Định dạng, độ dài, hình ảnh người thật](docs/03-dinh-dang-do-dai.md) | Độ dài tối thiểu/tối đa, cơ cấu hình ảnh, cấu trúc review, cắt short |
 | 04 | [Quy trình sản xuất](docs/04-quy-trinh-san-xuat.md) | 10 bước, ai làm gì, Claude làm gì |
-| 05 | [Bộ công cụ](docs/05-bo-cong-cu.md) | Tool nào, giá bao nhiêu, người dẫn AI làm sao cho đúng |
+| 05 | [Bộ công cụ](docs/05-bo-cong-cu.md) | Tool nào, giá bao nhiêu, người dẫn AI làm sao cho đúng; phương án HeyGen Video Agent + trình dựng (Q9) |
 | 06 | [Ngân sách & hoà vốn](docs/06-ngan-sach.md) | Ngân sách mỗi video, mỗi tháng, phễu affiliate, hoà vốn |
 | 07 | [Năng suất & lịch đăng](docs/07-nang-suat-lich-dang.md) | Mỗi ngày tối thiểu/tối đa bao nhiêu video, đăng giờ nào |
 | 08 | [Chống lỗi lặt vặt](docs/08-chong-loi-lat-vat.md) | 5 lớp phòng thủ, 25 lỗi hay gặp & cách chặn từ gốc |
