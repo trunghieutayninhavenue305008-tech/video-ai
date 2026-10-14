@@ -22,7 +22,7 @@ Bộ hồ sơ đầy đủ để **review thứ Tư 14/10/2026** và **bắt tay
 
 👉 Đọc trước:
 - [docs/01-tom-tat-de-xuat.md](docs/01-tom-tat-de-xuat.md): tóm tắt, đọc trong 3 phút.
-- [docs/12-kich-ban-thuyet-trinh.md](docs/12-kich-ban-thuyet-trinh.md): lời dẫn từng slide (21 trang) và 19 câu hỏi đáp.
+- [docs/12-kich-ban-thuyet-trinh.md](docs/12-kich-ban-thuyet-trinh.md): lời dẫn từng slide (21 trang) và 20 câu hỏi đáp.
 - [docs/09-chinh-sach-phap-ly-rui-ro.md](docs/09-chinh-sach-phap-ly-rui-ro.md): vì sao tách 2 kênh và điều kiện mở Kênh B.
 
 🎞️ **Slide thuyết trình (có ghi chú lời dẫn):** https://claude.ai/artifact/DAKFJctqG54oiPtmcoXjRc
@@ -44,7 +44,7 @@ Bộ hồ sơ đầy đủ để **review thứ Tư 14/10/2026** và **bắt tay
 | 08 | [Chống lỗi lặt vặt](docs/08-chong-loi-lat-vat.md) | 5 lớp phòng thủ, 25 lỗi hay gặp & cách chặn từ gốc |
 | 09 | [Chính sách, pháp lý, rủi ro](docs/09-chinh-sach-phap-ly-rui-ro.md) | YouTube, FTC, FCA/ESMA/CFTC, luật Việt Nam, hồ sơ hỏi luật sư |
 | 10 | [KPI & lộ trình](docs/10-kpi-lo-trinh.md) | Đo gì, 90 ngày làm gì, **7 ngày đầu sau review** |
-| 11 | [Tích hợp Claude](docs/11-tich-hop-claude.md) | Claude làm gì ở từng bước, Project, skill |
+| 11 | [Tích hợp Claude](docs/11-tich-hop-claude.md) | Claude làm gì ở từng bước, Project, skill; dây chuyền bán tự động hằng ngày (Q10) |
 | 12 | [Kịch bản thuyết trình](docs/12-kich-ban-thuyet-trinh.md) | Lời dẫn, con số cần thuộc, hỏi đáp |
 | — | [Nguồn tham khảo](docs/nguon-tham-khao.md) | Link nguồn cho mọi số liệu |
 

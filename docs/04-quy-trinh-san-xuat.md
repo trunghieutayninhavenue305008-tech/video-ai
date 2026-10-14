@@ -17,6 +17,8 @@
 
 **Nguyên tắc:** AI tạo toàn bộ hình, giọng, dựng; **dữ liệu sản phẩm là thật**; con người **chọn – test – duyệt**.
 
+Từ 23/10 các bước 1, 3, 4, 5, 7 (bản thô), 8 và cắt short được nối thành **dây chuyền bán tự động chạy theo lịch** (Q10); người giữ bước 2, Cổng 1, bước tạo cảnh Veo trong Flow và Cổng 2. Xem [11 mục 8](11-tich-hop-claude.md#8-dây-chuyền-tự-động-hằng-ngày--bán-tự-động-q10).
+
 ## 2. Chi tiết 10 bước
 
 Thời gian = phút thao tác của 1 người cho 1 video ~18 phút, cấp Tiêu chuẩn (tháng đầu → thành thạo). Tổng **420 → 234 phút**.

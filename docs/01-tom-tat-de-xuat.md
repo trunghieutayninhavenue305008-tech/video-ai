@@ -53,5 +53,6 @@
 | Q7 | Ngân sách test | US$150/tháng mua gói SaaS/AI tool + vốn nạp thử sàn ~US$1.000 (thu hồi được, khi Kênh B mở) | Chỉ dùng bản dùng thử miễn phí |
 | Q8 | Nhận diện | Claude đề xuất tên 2 kênh + nhân vật người dẫn; sếp chọn. Liên kết website review của công ty (nếu có) | Sếp tự đặt |
 | Q9 | Cách dựng video Kênh A | Giữ quy trình hiện tại (ElevenLabs → HeyGen → Veo → CapCut); **video thử #2 (20/10) làm bằng HeyGen Video Agent + trình dựng** để đo credit & thời gian thật, chốt 21/10 ([05 mục 7](05-bo-cong-cu.md#7-phương-án-thay-thế-heygen-video-agent--trình-dựng-q9--thử-ab-ngày-2010)) | Đổi hẳn sang HeyGen Video Agent: nhanh hơn ~20%, gói B thành ~26–34 triệu ₫/tháng |
+| Q10 | Tự động hoá hằng ngày | Xây **dây chuyền bán tự động** từ 23/10 (2 giai đoạn, ~30 giờ, +1,46 triệu ₫/tháng): AI chạy theo lịch kịch bản → giọng → người dẫn → bản thô → short → SEO → tải lên **riêng tư**; người giữ test, Cổng 1, Cổng 2 và bấm đăng → ~122 thay vì 234 phút/video ([11 mục 8](11-tich-hop-claude.md#8-dây-chuyền-tự-động-hằng-ngày--bán-tự-động-q10)) | Tự động 100% (vi phạm FTC/YouTube) · hoặc chưa tự động |
 
 > Sau khi chốt, chạy **Kế hoạch 7 ngày** ở [10-kpi-lo-trinh.md](10-kpi-lo-trinh.md) từ ngày 15/10.

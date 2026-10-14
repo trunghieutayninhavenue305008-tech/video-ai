@@ -5,6 +5,7 @@
 ## Chính sách YouTube & nền tảng
 - YouTube Help — Channel monetization policies (inauthentic content, AI personas & sensitive topics, reused content): https://support.google.com/youtube/answer/1311392
 - YouTube Help — Disclosing use of altered or synthetic content: https://support.google.com/youtube/answer/14328491
+- YouTube Data API — Videos: insert (video tải lên từ dự án API chưa kiểm duyệt, tạo sau 28/07/2020, bị khoá ở chế độ riêng tư): https://developers.google.com/youtube/v3/docs/videos/insert
 - TechCrunch (20/07/2026) — YouTube clarifies policies around AI slop and upsetting videos: https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/
 - TechTimes (11/08/2026) — YouTube Partner Program doubles entry bar: https://www.techtimes.com/articles/323954/20260811/youtube-partner-program-doubles-entry-bar-adds-monthly-shorts-earnings-gate.htm
 - AIR Media-Tech — YouTube Partner Program requirements 2026: https://air.io/en/monetization/youtube-partner-program-requirements-2026-the-complete-guide

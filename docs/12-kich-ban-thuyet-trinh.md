@@ -40,14 +40,14 @@
 | 13 | Năng suất & lịch đăng | 1 video dài + 6 short/ngày; hẹn giờ theo giờ Mỹ |
 | 14 | HeyGen Video Agent: cách làm | Một công cụ gộp 4 bước giọng–người dẫn–B-roll–dựng, nhưng không test thay mình |
 | 15 | HeyGen Video Agent: chi phí & hiệu suất | Nhanh hơn ~20%, đắt hơn 1,5–3 lần → thử ở video #2 rồi chốt Q9 |
-| 16 | Chống lỗi lặt vặt | Mỗi lỗi chỉ được xảy ra 1 lần; lỗi tuân thủ không có ngoại lệ |
-| 17 | Chính sách YouTube & FTC | Công khai 3 lớp, chỉ nói điều đã test |
-| 18 | Kênh B & pháp luật | Kênh B chuẩn bị song song, chỉ đăng khi luật sư đồng ý |
+| 16 | Tự động hoá hằng ngày | AI chạy ban đêm, người duyệt ban ngày: 234 → ~122 phút/video, +1,46 triệu ₫/tháng |
+| 17 | Chống lỗi lặt vặt | Mỗi lỗi chỉ được xảy ra 1 lần; lỗi tuân thủ không có ngoại lệ |
+| 18 | Chính sách YouTube & FTC | Công khai 3 lớp, chỉ nói điều đã test |
 | 19 | Lộ trình 90 ngày | Có điểm dừng rõ ràng ngày 30 và 60 |
 | 20 | 7 ngày tới | Duyệt hôm nay — thứ Năm tuần sau có video đầu tiên |
-| 21 | 9 quyết định | — |
+| 21 | 10 quyết định | — |
 
-## 3. Chuẩn bị hỏi đáp (19 câu)
+## 3. Chuẩn bị hỏi đáp (20 câu)
 
 **1. "Sao phải tách 2 kênh? Một kênh cho tiện."**
 Chính sách YouTube: kênh dùng nhân vật AI đưa hướng dẫn tài chính/đầu tư thì **cả kênh** không được kiếm tiền. Tách ra để Kênh A (SaaS, AI tool, SPVL) được dùng người dẫn AI an toàn; Kênh B (tài chính) không dùng người dẫn AI. Khán giả hai nhóm cũng khác nhau.
@@ -101,9 +101,12 @@ Làm trang trung gian chứa link affiliate + bài viết chi tiết (tăng chuy
 **19. "Có tool nào vừa tạo người vừa tự dựng hết không?"**
 Có: HeyGen Video Agent + trình dựng (slide 14–15). Nhanh hơn ~20% (234 → ~187 phút/video) nhưng đắt hơn 1,5–3 lần: gói B lên ~26–34 triệu ₫/tháng. Vẫn phải tự test và quay màn hình. Nếu Kênh B không mở thì chênh chỉ −1,5 đến +5,8 triệu ₫/tháng. Em thử ở video #2 ngày 20/10 rồi chốt Q9.
 
+**20. "AI tự làm video mỗi ngày luôn được không?"**
+Được, ở mức bán tự động (slide 16): mỗi tối Claude viết kịch bản và tự soát, ElevenLabs đọc, HeyGen tạo người dẫn, máy ráp bản thô, cắt short, làm SEO, tải lên YouTube ở chế độ riêng tư. Người còn ~2 giờ/video: test & quay màn hình, Cổng 1, tạo cảnh Veo trong Flow, sửa bản thô + Cổng 2. Không tự động 100% vì FTC bắt test thật, YouTube không trả tiền nội dung hàng loạt, API YouTube chưa duyệt chỉ đăng riêng tư, Veo qua API đắt ~10 lần. Xây ~30 giờ sau ra mắt, +1,46 triệu ₫/tháng, hoàn vốn ~1,2 tháng (Q10).
+
 ## 4. Mẹo trình bày
 
 - Mở bằng **slide 2**, không mở bằng công cụ.
 - Khi bị hỏi số: mở [bảng tính](../ke-hoach/bang-tinh-ngan-sach-va-van-hanh.xlsx), đổi giả định ngay (lượt xem, CTR link, số video Kênh B = 0) để sếp thấy mô hình phản ứng.
-- Nói thẳng rủi ro Kênh B — đây là điểm sếp đánh giá sự chín chắn của kế hoạch.
+- Nói thẳng rủi ro Kênh B — đây là điểm sếp đánh giá sự chín chắn của kế hoạch. Slide "Kênh B & pháp luật" đã bỏ khỏi deck; nếu được hỏi, trả lời theo câu 7 và mở [09](09-chinh-sach-phap-ly-rui-ro.md).
 - Kết thúc bằng **slide 21**: chốt từng quyết định, ghi lại ngay.

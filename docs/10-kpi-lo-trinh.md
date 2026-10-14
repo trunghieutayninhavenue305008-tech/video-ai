@@ -39,7 +39,7 @@
 | Giai đoạn | Thời gian | Kênh A | Kênh B | Gói |
 |---|---|---|---|---|
 | **0. Chuẩn bị** | 15–21/10 | Tài khoản, Bible, người dẫn AI, template, xin affiliate, 2 video thử | **Gửi hồ sơ luật sư**; mở tài khoản test sàn có giấy phép | A |
-| **1. Ra mắt & học** | 22/10–22/11 | 2 → 3 video/tuần; rút thời gian ≤ 280 phút | Test sàn, viết kịch bản, làm kho 4–6 video — **chưa đăng** đến khi có ý kiến luật sư | B |
+| **1. Ra mắt & học** | 22/10–22/11 | 2 → 3 video/tuần; rút thời gian ≤ 280 phút; **xây dây chuyền bán tự động**: GĐ1 23/10–05/11 (phần chữ), GĐ2 06–22/11 (phần hình) — [11 mục 8](11-tich-hop-claude.md#8-dây-chuyền-tự-động-hằng-ngày--bán-tự-động-q10) | Test sàn, viết kịch bản, làm kho 4–6 video — **chưa đăng** đến khi có ý kiến luật sư | B |
 | **2. Tăng tốc** | 23/11–22/12 | 3 video/tuần; A/B thumbnail; cập nhật giá/link video cũ | Nếu luật sư "đồng ý có điều kiện": đăng 2 video/tuần với lọc quốc gia | B |
 | **3. Về đích YPP** | 23/12–31/01 | Dồn lực vào dạng video có CTR/chuyển đổi tốt nhất; **nộp YPP ngay khi đủ** | Duy trì; đánh giá doanh thu affiliate | B |
 
@@ -47,7 +47,7 @@
 
 | Mốc | Đạt → đi tiếp | Điều chỉnh | Dừng / tái cấu trúc |
 |---|---|---|---|
-| **Ngày 30 (22/11)** | CTR ≥ 4%, AVD ≥ 25%, ≥ 1 video > 3.000 lượt xem, CTR link ≥ 1% | Đổi công thức thumbnail/hook; đổi mảng ưu tiên (AI tool ↔ SaaS) | — |
+| **Ngày 30 (22/11)** | CTR ≥ 4%, AVD ≥ 25%, ≥ 1 video > 3.000 lượt xem, CTR link ≥ 1%; dây chuyền qua tiêu chí GĐ2 | Đổi công thức thumbnail/hook; đổi mảng ưu tiên (AI tool ↔ SaaS) | — |
 | **Ngày 60 (22/12)** | Kênh A ≥ 1.500 giờ & ≥ 450 sub; affiliate ≥ 30% chi phí công cụ | 700–1.500 giờ: đổi góc review (so sánh, "best of" thay vì review đơn) | < 700 giờ & affiliate < 10% chi phí: hạ về gói A, xem lại ngách |
 | **Ý kiến luật sư Kênh B** | "Được, có điều kiện" → đăng theo điều kiện | "Rủi ro cao" → Kênh B chỉ nội dung giáo dục, không link | "Không được" → dừng Kênh B, dồn sản lượng sang Kênh A |
 

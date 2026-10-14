@@ -48,6 +48,25 @@ Video review cần thêm thời gian **bảo trì**: cập nhật bình luận g
 
 Tiết kiệm ~20% (90 phút/video tháng đầu, 47 phút khi thành thạo) ≈ **9,4 giờ/tháng** ở gói B. Kênh A vẫn giữ nhịp ~3 video/tuần, nên thời gian dư dùng để test sản phẩm kỹ hơn hoặc làm kho Kênh B, không phải để đăng nhiều hơn. Chi phí tiền ở [06 mục 7](06-ngan-sach.md#7-phương-án-heygen-video-agent--trình-dựng-chỉ-kênh-a-q9).
 
+### Dây chuyền bán tự động (sheet NangSuat, mục Bán tự động)
+
+| Bước | Hiện tại · thành thạo | Bán tự động | Ai làm |
+|---|---|---|---|
+| 1. Chọn sản phẩm | 25 | 5 | Claude chạy theo lịch; người duyệt danh sách |
+| 2. Test & quay màn hình | 40 | **40** | **Người — bắt buộc** |
+| 3. Kịch bản | 25 | 0 | AI |
+| Cổng 1 | 10 | **10** | **Người** |
+| 4. Giọng | 12 | 2 | ElevenLabs API |
+| 5. Người dẫn | 15 | 3 | HeyGen API |
+| 6. Cảnh Veo + ảnh | 25 | 15 | Claude soạn prompt; người tạo trong Flow |
+| 7. Dựng | 55 | 30 | Máy ráp bản thô; người sửa |
+| 8. Thumbnail + SEO | 15 | 5 | Claude; người chọn thumbnail |
+| Cổng 2 | 12 | **12** | **Người** |
+| **Tổng / video** | **234** | **~122** ⚠️ | |
+| Cắt 5 short | 25 | 10 | Tool chạy sẵn; người duyệt |
+
+Tiết kiệm ~127 phút/video Kênh A, ~115 phút/video Kênh B → **~41 giờ/tháng** ở gói B. Năng lực máy ~3,2 video dài/ngày/người, nhưng số đăng vẫn theo trần đăng và thời gian test. Giờ dư dùng để test kỹ hơn, làm Kênh B, hoặc gánh sản lượng gói C (40 video/tháng ≈ 108 giờ, kể cả short native) mà chưa cần người thứ 2 ⚠️ kiểm chứng sau GĐ2. Chi tiết: [11 mục 8](11-tich-hop-claude.md#8-dây-chuyền-tự-động-hằng-ngày--bán-tự-động-q10).
+
 ## 3. Trần đăng mỗi kênh
 
 | Nền tảng | Loại | Tối thiểu | Tối đa | Gói B thực tế |

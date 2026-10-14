@@ -136,3 +136,18 @@ Tiền HeyGen tính tuyến tính theo US$49/1.000 credit — gói Pro có nhi�
 
 **Kết luận:** chạy cả 2 kênh thì **chưa đáng đổi** (mỗi giờ tiết kiệm tốn 0,57–1,34 triệu ₫). Kênh B không mở và credit thật gần 20/phút thì **đáng đổi**. Quyết định sau video thử #2 (20/10) — cách thử ở [05 mục 7](05-bo-cong-cu.md#7-phương-án-thay-thế-heygen-video-agent--trình-dựng-q9--thử-ab-ngày-2010).
 
+## 8. Dây chuyền tự động hằng ngày — bán tự động (Q10)
+
+Sheet **ChiPhiVideo** mục F. Giữ nguyên các gói hiện tại; Veo vẫn tạo trong Flow (Flow không có API, Veo qua Gemini API đắt ~9,8 lần credit Ultra ở cấp Tiêu chuẩn).
+
+| Chỉ tiêu (gói B, 20 video dài/tháng) | Giá trị |
+|---|---|
+| Claude API cho dây chuyền | US$3/video × 20 = US$60/tháng (trừ US$10 đã có) |
+| Máy chạy | 0 (Claude Code theo lịch hoặc máy công ty) |
+| HeyGen API chênh so với gói web | 0 (tạm tính) ⚠️ chưa xác minh giá API |
+| **Tăng thêm / tháng (gồm 10% dự phòng)** | **+US$55 ≈ 1,46 triệu ₫** |
+| Gói B khi có dây chuyền | ~US$816 ≈ **21,6 triệu ₫/tháng** |
+| Giờ công tiết kiệm | ~41 giờ/tháng ≈ 3,97 triệu ₫ |
+| Chi phí xây một lần | ~30 giờ ≈ 2,9 triệu ₫ → hoàn vốn ~1,2 tháng |
+
+So với HeyGen Video Agent (mục 7): rẻ hơn ~3,7–8,7 lần tiền tăng thêm mỗi tháng (+1,46 so với +5,3–12,6 triệu ₫), mà tiết kiệm gấp ~2,7 lần thời gian (127 so với 47 phút/video). Chi tiết kỹ thuật: [11 mục 8](11-tich-hop-claude.md#8-dây-chuyền-tự-động-hằng-ngày--bán-tự-động-q10).
